@@ -40,26 +40,6 @@
 #define ARR_SELECT(ARRAY,INDEX,DEFAULT) (if (count ARRAY > INDEX) then {ARRAY select INDEX} else {DEFAULT})
 #define ANY_OF(ARRAY,CONDITION) (ARRAY findIf {CONDITION} != -1)
 
-#define MACRO_ADDWEAPON(WEAPON,COUNT) class _xx_##WEAPON { \
-    weapon = #WEAPON; \
-    count = COUNT; \
-}
-
-#define MACRO_ADDITEM(ITEM,COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
-    count = COUNT; \
-}
-
-#define MACRO_ADDMAGAZINE(MAGAZINE,COUNT) class _xx_##MAGAZINE { \
-    magazine = #MAGAZINE; \
-    count = COUNT; \
-}
-
-#define MACRO_ADDBACKPACK(BACKPACK,COUNT) class _xx_##BACKPACK { \
-    backpack = #BACKPACK; \
-    count = COUNT; \
-}
-
 // BEGIN ACE3 reference macros
 
 #define ACE_PREFIX ace

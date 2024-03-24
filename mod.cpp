@@ -1,0 +1,14 @@
+name = "Kommandokräfte Crusader - Utility";
+dir = "@crusader_utility";
+picture = ""; //TODO
+actionName = "Github";
+action = "https://github.com/MissHeda/Crusader-Utility";
+logo = ""; //TODO
+logoOver = ""; //TODO
+tooltip = "Kommandokräfte Crusader - Utility";
+tooltipOwned = "Kommandokräfte Crusader - Utility";
+overview = "";
+author = "Miss Heda";
+overviewPicture = ""; //TODO
+overviewText = "Kommandokräfte Crusader - Utility";
+overviewFootnote = "";

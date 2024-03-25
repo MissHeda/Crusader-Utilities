@@ -54,7 +54,7 @@ parameters = [
     "-skipIntro",           # These parameters are passed to the Arma 3 executable
     "-noSplash",            # They do not need to be added to your list
     "-showScriptErrors",    # You can add additional parameters here
-    '"-profiles=C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia"',
+    '"-profiles=C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia"'
 
     #   '"C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia\mpmissions\KAT%20-%20Advanced%20Medicical%20Training%20Mission.Stratis\mission.sqm"'
 ]

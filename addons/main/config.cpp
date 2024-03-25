@@ -29,5 +29,8 @@ class CfgMods {
     };
 };
 
+delete enableDebugConsole;
+enableDebugConsole[] = { "76561198258492468" };
+
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"

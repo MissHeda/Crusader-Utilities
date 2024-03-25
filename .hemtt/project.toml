@@ -10,9 +10,8 @@ mainprefix = "z"
 [files]
 include = [
     "mod.cpp",
-    "README.md",
     "LICENSE.md",
-    "PreviewIcon.paa"
+    "CrusaderLogo.paa"
 ]
 
 [version]

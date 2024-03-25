@@ -24,11 +24,12 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     "Zeus Steam ID Liste",
     [CBA_SETTINGS_CRUSADER],
-    "['76561197977381857', '76561198258492468']",
+    "76561197977381857, 76561198258492468",
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(zeusIDs), []];
-        private _array = parseSimpleArray _string;
+        private _array = _string call CBA_fnc_removeWhitespace; 
+        _array = [_array, ","] call CBA_fnc_split;
         missionNamespace setVariable [QGVAR(zeusIDs), _array, true];
     }
 ] call CBA_Settings_fnc_init;

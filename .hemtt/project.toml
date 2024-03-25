@@ -49,7 +49,6 @@ workshop = [
     "450814997", # CBA_A3's Workshop ID
     "463939057", # ACE3's Workshop ID
     "1779063631", # Zeus Enhanced
-    "2018593688", # Zeus Enhanced Ace Compat
     "2369477168" # Advanced Dev Tools
 ]
 parameters = [

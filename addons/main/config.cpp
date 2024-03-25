@@ -7,7 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main"
+            "cba_main",
+            "ace_main"
         };
         author = "Miss Heda";
         url = CSTRING(URL);
@@ -19,7 +20,7 @@ class CfgMods {
     class PREFIX {
         dir = "@crusader_utility";
         name = "Kommandokräfte Crusader - Utility";
-        picture = "";
+        picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";
         hideName = "true";
         actionName = "Website";

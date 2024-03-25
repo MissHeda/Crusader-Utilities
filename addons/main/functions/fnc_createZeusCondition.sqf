@@ -15,13 +15,13 @@
  * Public: No
  */
 
-params ["_caller"];
+private _UID = getPlayerUID player;
+private _allowedZeus = missionNamespace getVariable [QGVAR(zeusIDs), []];
 
-private _UID = getPlayerUID _caller;
-private _allowedZeus = missionNamespace getVariable [QGVAR(crusader_zeusIDs), []];
-
-if (_allowedZeus findIf { _UID == _x } != -1 && isNil "ace_zeus_zeus") exitWith {
-	true;
+if (!(GVAR(zeusEnable))) exitWith { false }; // Exit when Zeus System is disabled
+if (!isNull getAssignedCuratorLogic player) exitWith { false }; // Don't allow if we already are a zeus, intentionally using player instead of ace_player
+if ((_allowedZeus findIf { _UID == _x } != -1 || isServer) && isNil QACEGVAR(zeus,zeus)) exitWith { // Check for ID in list & if user already has zeus
+	true
 };
-	
+
 false;

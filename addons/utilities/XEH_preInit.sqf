@@ -6,14 +6,14 @@ PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
 PREP_RECOMPILE_END;
 
-#define CBA_SETTINGS_CRUSADER "Kommandokräfte Crusader - Utility"
+#define CBA_SETTINGS_CRUSADER "Kommandokräfte Crusader - Utilities"
 
 // Zeus via SteamID 64 enable
 [
     QGVAR(zeusEnable),
     "CHECKBOX",
-    "Zeus Steam ID System",
-    [CBA_SETTINGS_CRUSADER],
+    [LLSTRING(SETTING_ZeusSystem_Enable),LLSTRING(SETTING_ZeusSystem_Enable_DESC)],
+    [CBA_SETTINGS_CRUSADER, LSTRING(SETTING_SubCategory_ZeusSystem)],
     [true],
     true
 ] call CBA_Settings_fnc_init;
@@ -22,8 +22,8 @@ PREP_RECOMPILE_END;
 [
     QGVAR(zeusIDs),
     "EDITBOX",
-    "Zeus Steam ID Liste",
-    [CBA_SETTINGS_CRUSADER],
+    [LLSTRING(SETTING_ZeusSystem_List),LLSTRING(SETTING_ZeusSystem_List_DESC)],
+    [CBA_SETTINGS_CRUSADER, LSTRING(SETTING_SubCategory_ZeusSystem)],
     "76561197977381857, 76561198258492468",
     1,
     {

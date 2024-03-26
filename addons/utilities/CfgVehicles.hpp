@@ -2,7 +2,7 @@ class CfgVehicles {
     class Man;
     class CAManBase: Man {
         class ACE_SelfActions {
-            class GVAR(create) {
+            class Crusader_Zeus_SteamID_System {
                 displayName = ACECSTRING(Zeus,CreateZeus);
                 condition = QUOTE(call FUNC(createZeusCondition));
                 exceptions[] = {"isNotSwimming", "isNotInside", "isNotSitting", "isNotOnLadder", "isNotRefueling"};

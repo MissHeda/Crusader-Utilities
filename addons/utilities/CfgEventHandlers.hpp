@@ -5,6 +5,7 @@ class Extended_PreInit_EventHandlers {
     };
 };
 
+/* Aktuell Disabled da wir keine init setzen / noch nicht brauchen
 class Extended_Init_EventHandlers {
     class CAManBase {
         class ADDON {
@@ -12,3 +13,4 @@ class Extended_Init_EventHandlers {
         };
     };
 };
+*/

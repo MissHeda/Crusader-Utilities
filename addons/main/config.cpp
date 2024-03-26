@@ -7,8 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main",
-            "ace_main"
+            "cba_main"
         };
         author = "Miss Heda";
         url = CSTRING(URL);
@@ -18,8 +17,8 @@ class CfgPatches {
 
 class CfgMods {
     class PREFIX {
-        dir = "@crusader_utility";
-        name = "Kommandokräfte Crusader - Utility";
+        dir = "@crusader_utilities";
+        name = "Kommandokräfte Crusader - Utilities";
         picture = "A3\Ui_f\data\Logos\arma3_expansion_alpha_ca";
         hidePicture = "true";
         hideName = "true";
@@ -31,6 +30,3 @@ class CfgMods {
 
 delete enableDebugConsole;
 enableDebugConsole[] = { "76561198258492468" };
-
-#include "CfgEventHandlers.hpp"
-#include "CfgVehicles.hpp"

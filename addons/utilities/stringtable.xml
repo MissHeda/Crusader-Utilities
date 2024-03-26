@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="crusader">
+    <Package name="utilities">
+        <Key ID="STR_crusader_utilities_SETTING_SubCategory_ZeusSystem">
+            <English>Zeus SteamID System</English>
+            <German>Zeus SteamID System</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_ZeusSystem_Enable">
+            <English>Enable ACE Zeus via SteamID</English>
+            <German>Aktiviere ACE Zeus via SteamID</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_ZeusSystem_Enable_DESC">
+            <English>If enabled, every user that has their steamID 64 listed in the list below\nwill be able to create a new zeus entity for themselfs via the ace self interaction system and be able to use it.</English>
+            <German>Wenn aktiviert, kann jeder Benutzer, dessen SteamID 64 in der unten stehenden Liste aufgeführt ist,\nüber das ACE-Selbstinteraktionssystem eine neue Zeus-Entität für sich selbst erstellen und benutzen.</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_ZeusSystem_List">
+            <English>SteamID 64 List</English>
+            <German>SteamID 64 Liste</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_ZeusSystem_List_DESC">
+            <English>A list of SteamIDs that is used to allow players to give themselfs zeus via ace.\nTo add IDs just simply add a , and put the new ID behind it, repeat this for every new entry.</English>
+            <German>Eine Liste von SteamIDs, die verwendet wird, um Spielern zu ermöglichen, sich selbst Zeus über ACE zu geben. \nUm IDs hinzuzufügen, fügen Sie einfach ein Komma hinzu und setzen Sie die neue ID dahinter. Wiederholen Sie diesen Vorgang für jeden neuen Eintrag.</German>
+        </Key>
+    </Package>
+</Project>

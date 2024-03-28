@@ -246,8 +246,13 @@ class CfgWorlds
 		cutscenes[] = {"Main_Menu_Intro"};
 	};
 
-	initWorld = "VR";
-	demoWorld = "VR";
+    class gm_weferlingen_summer : CAWorld
+    {
+        cutscenes[] = {"Main_Menu_Intro"};
+    };
+
+	initWorld = "gm_weferlingen_summer";
+	demoWorld = "gm_weferlingen_summer";
 };
 
 // Define a new mission to use in cutsene
@@ -257,7 +262,7 @@ class CfgMissions
 	{
 		class Main_Menu_Intro
 		{
-			directory = "z\crusader\addons\utilities\assets\main_menu\mainmenu.vr"; // Path to scenario with the scene
+			directory = "z\crusader\addons\utilities\assets\main_menu\mainmenu.gm_weferlingen_summer"; // Path to scenario with the scene
 		};
 	};
 };

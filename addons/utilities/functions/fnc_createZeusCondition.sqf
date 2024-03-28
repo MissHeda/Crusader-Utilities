@@ -4,19 +4,20 @@
  * Checks if the players steamID 64 is in the CBA settings list
  *
  * Arguments:
- * 0: Object
+ * 0: Unit <OBJECT>
  *
  * Return Value:
  * Bool
  *
  * Example:
- * [player] call crusader_main_fnc_createZeusCondition;
+ * [player] call crusader_utilities_fnc_createZeusCondition;
  *
  * Public: No
  */
 
 private _UID = getPlayerUID player;
 private _allowedZeus = missionNamespace getVariable [QGVAR(zeusIDs), []];
+_allowedZeus pushBack "_SP_PLAYER_";
 
 if (!(GVAR(zeusEnable))) exitWith { false }; // Exit when Zeus System is disabled
 if (!isNull getAssignedCuratorLogic player) exitWith { false }; // Don't allow if we already are a zeus, intentionally using player instead of ace_player

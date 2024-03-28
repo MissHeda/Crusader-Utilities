@@ -8,7 +8,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "cba_main",
-            "ace_main"
+            "ace_main",
+            "ace_optionsmenu"
         };
         author = "Miss Heda";
         url = ECSTRING(main,URL);
@@ -16,6 +17,7 @@ class CfgPatches {
     };
 };
 
+// Define close to all classes the file needs
 class Attributes;
 class RscStandardDisplay;
 class RscProgress;
@@ -69,119 +71,198 @@ class ctrlStaticPicture;
 class RscButtonMenuSteam;
 class RscButtonTextOnly;
 
-// Main Menu
+// Disables the Main Menu Ace Version popup at the bottem right.
+class Extended_DisplayLoad_EventHandlers {
+    class RscDisplayMain {
+        Crusader_Disable_ACE_loadMainMenuBox = "_this select 0 displayCtrl 80090 ctrlShow False";
+    };
+};
+
+// Overrides the main menu background image that gets set when users has -skipIntro as a launch parameter.
+class RscTitles 
+{
+    class RscDisplayMainMenuBackground
+	{
+		class Controls
+		{
+			class Picture: RscPicture
+			{
+				idc = 102;
+				text = QPATHTOF(assets\main_menu\images\CrusaderMainMenu.jpg);
+				x = "safezoneX";
+				y = "safezoneY";
+				w = "safezoneW";
+				h = "safeZoneH";
+			};
+		};
+	};
+};
+
+// Disables the middel spotlight box
 class RscMainMenuSpotlight: RscControlsGroupNoScrollbars
 {
 	show = 0;
 	onLoad = "";
 };
-class RscDisplayMain:RscStandardDisplay{
-    class controls {
-        class BackgroundSpotlight:RscPicture {
+
+// Disables default arma infos
+class RscDisplayMain: RscStandardDisplay 
+{
+    class controls 
+    {
+        class BackgroundSpotlight: RscPicture 
+        {
             show=0;
             onload="";
         };
-        class BackgroundSpotlightLeft:BackgroundSpotlight {
+        class BackgroundSpotlightLeft: BackgroundSpotlight 
+        {
             show=0;
             onload="";
         };
-        class BackgroundSpotlightRight:BackgroundSpotlightLeft {
+        class BackgroundSpotlightRight: BackgroundSpotlightLeft 
+        {
             show=0;
             onload="";
         };
-        class Spotlight1:RscMainMenuSpotlight {
+        class Spotlight1: RscMainMenuSpotlight 
+        {
             idc=1021;
             show=0;
             onload="";
         };
-        class Spotlight2:RscText {
+        class Spotlight2: RscText 
+        {
             idc=1020;
             show=0;
             onload="";
         };
-        class Spotlight3:RscMainMenuSpotlight {
+        class Spotlight3: RscMainMenuSpotlight 
+        {
             idc=1022;
             show=0;
             onload="";
         };
-        class SpotlightPrev:RscActivePictureKeepAspect {
+        class SpotlightPrev: RscActivePictureKeepAspect 
+        {
             idc=1060;
             show=0;
             onload="";
         };
-        class SpotlightNext:SpotlightPrev {
+        class SpotlightNext: SpotlightPrev 
+        {
             show=0;
             onload="";
         };
-        class logo:RscActivePicture {
-            text= QPATHTOF(assets\main_menu\CrusaderLogo.paa); 
-            url="https://xn--kommandokrfte-crusader-94b.de/";
-            tooltip="Kommandokräfte Crusader";
-            onButtonClick="";
-            onload="";
+        class logo: RscActivePicture // Remove default arma logo and replace with custom one
+        { 
+            text = QPATHTOF(assets\main_menu\images\CrusaderLogo.paa);
+            tooltip = CSTRING(MAINMENU_ArmaLogo_ReplacementIcon_DESC);
+            url = "https://xn--kommandokrfte-crusader-94b.de/";
+            onButtonClick = "";
+            onload = "";
         };
-        class logoApex:logo {
-            show=0;
-            onload="";
-            text="";
+        class logoApex: logo 
+        {
+            show = 0;
+            onload = "";
+            text = "";
         };
-        class infomods:RscControlsGroupNoHScrollbars {
-            show=1;
+        class infomods: RscControlsGroupNoHScrollbars 
+        {
+            show = 0;
         };
-        class infoDLCsOwned:infomods {
-            show=1;
+        class infoDLCsOwned: infomods 
+        {
+            show = 0;
         };
-        class infoDLCs:infoDLCsOwned {
-            show=1;
+        class infoDLCs: infoDLCsOwned 
+        {
+            show = 0;
         };
-        class infoNews:infomods {
-            show=1;
+        class infoNews: infomods 
+        {
+            show = 0;
         };
-        class infoVersion:infoNews {
-            show=1;
+        class infoVersion: infoNews 
+        {
+            show = 0;
         };
+        class GroupSingleplayer: RscControlsGroupNoScrollbars // Call Controls from GroupSingleplayer to inherit it in GroupMultiplayer
+		{
+			class Controls;
+		};
+		class GroupMultiplayer: GroupSingleplayer
+		{
+			h = "(9 *     1.5) *     (pixelH * pixelGrid * 2)";
+			class Controls: Controls
+			{
+				class Campaigns;
+				class join_CrusaderServer: Campaigns // Custom join button that is shown below normal multiplayer buttons
+				{
+					idc = -1;
+					text = CSTRING(MAINMENU_ArmaServer_Connect);
+                    tooltip = CSTRING(MAINMENU_ArmaServer_Connect_DESC);
+					colorFocused[] = {1,1,1,1};
+					y = "(3 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
+					action = "";
+					onbuttonclick = "connectToServer ['116.202.209.137', 2302, ''];";
+					Onload = "";
+				};
+                class join_CrusaderTeamSpeak: join_CrusaderServer // Custom join button for teamspeak
+				{
+					text = CSTRING(MAINMENU_TeamSpeak_Connect);
+					tooltip = CSTRING(MAINMENU_TeamSpeak_Connect_DESC);
+                    url = "ts3server://185.249.199.144?port=9022";
+					y = "(4 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
+					onbuttonclick = "";
+				};
+			};
+		};
     };
 };
-class CfgWorlds {
-	class CAWorld;	// External class reference
-	class Altis : CAWorld {
-		cutscenes[] = {"mymainmenu"};
+
+// Override cutsene for default maps
+class CfgWorlds 
+{
+	class CAWorld;
+	class Altis : CAWorld 
+    {
+		cutscenes[] = {"Main_Menu_Intro"};
 	};
 	
-	class Stratis : CAWorld {
-		cutscenes[] = {"mymainmenu"};
+	class Stratis : CAWorld 
+    {
+		cutscenes[] = {"Main_Menu_Intro"};
 	};
 
-	class Enoch : CAWorld {
-		cutscenes[] = {"mymainmenu"};
+	class Enoch : CAWorld 
+    {
+		cutscenes[] = {"Main_Menu_Intro"};
 	};
 
-	class hellanmaa : CAWorld {
-		cutscenes[] = {"mymainmenu"};
-	};
-	
-	class hellanmaaw : CAWorld {
-		cutscenes[] = {"mymainmenu"};
-	};
-
-	class VR : CAWorld {
-		cutscenes[] = {"mymainmenu"};
+	class VR : CAWorld 
+    {
+		cutscenes[] = {"Main_Menu_Intro"};
 	};
 
 	initWorld = "VR";
 	demoWorld = "VR";
 };
 
+// Define a new mission to use in cutsene
 class CfgMissions
 {
 	class Cutscenes
 	{
-		class mymainmenu // Class referenced in 'cutscenes' property in CfgWorlds
+		class Main_Menu_Intro
 		{
 			directory = "z\crusader\addons\utilities\assets\main_menu\mainmenu.vr"; // Path to scenario with the scene
 		};
 	};
 };
 
+
+// ---------- Cfgs to include ----------
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"

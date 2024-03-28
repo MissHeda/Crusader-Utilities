@@ -21,5 +21,25 @@
             <English>A list of SteamIDs that is used to allow players to give themselfs zeus via ace.\nTo add IDs just simply add a , and put the new ID behind it, repeat this for every new entry.</English>
             <German>Eine Liste von SteamIDs, die verwendet wird, um Spielern zu ermöglichen, sich selbst Zeus über ACE zu geben. \nUm IDs hinzuzufügen, fügen Sie einfach ein Komma hinzu und setzen Sie die neue ID dahinter. Wiederholen Sie diesen Vorgang für jeden neuen Eintrag.</German>
         </Key>
+        <Key ID="STR_crusader_utilities_MAINMENU_ArmaServer_Connect">
+            <English>Crusader Server</English>
+            <German>Crusader Server</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_MAINMENU_ArmaServer_Connect_DESC">
+            <English>Connect to the Kommandokräfte Crusader Server</English>
+            <German>Verbinde dich mit dem Kommandokräfte Crusader Server</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_MAINMENU_TeamSpeak_Connect">
+            <English>Crusader TeamSpeak</English>
+            <German>Crusader TeamSpeak</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_MAINMENU_TeamSpeak_Connect_DESC">
+            <English>Connect to the Kommandokräfte Crusader TeamSpeak</English>
+            <German>Verbinde dich mit dem Kommandokräfte Crusader TeamSpeak</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_MAINMENU_ArmaLogo_ReplacementIcon_DESC">
+            <English>Kommandokräfte Crusader Website</English>
+            <German>Kommandokräfte Crusader Webseite</German>
+        </Key>
     </Package>
 </Project>

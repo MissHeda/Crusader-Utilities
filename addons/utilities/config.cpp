@@ -71,10 +71,44 @@ class ctrlStaticPicture;
 class RscButtonMenuSteam;
 class RscButtonTextOnly;
 
-// Disables the Main Menu Ace Version popup at the bottem right.
+// Override initial arma loading
+class RscDisplayStart: RscStandardDisplay
+{
+    class controls
+    {
+        class LoadingStart: RscControlsGroup
+        {
+            class controls
+            {
+                /*
+                class Noise: RscPicture
+                {
+                    idc = 1201;
+                    text = QPATHTOF(assets\main_menu\images\CrusaderMainMenu.jpg);
+                    x = "0 * safezoneW";
+                    y = "0 * safezoneH";
+                    w = "1 * safezoneW";
+                    h = "1 * safezoneH";
+                };*/
+                class Logo: RscPictureKeepAspect
+                {
+                    idc = 1200;
+                    text = QPATHTOF(assets\main_menu\images\Arma_x_Crusader.paa);
+                    x = "0.33375 * safezoneW";
+                    y = "0.29 * safezoneH";
+                    w = "0.3325 * safezoneW";
+                    h = "0.39375 * safezoneH";
+                };
+            };
+        };
+    };
+};
+
+// Disables the Main Menu Ace Version popup at the bottem right & the Project Opfor logo
 class Extended_DisplayLoad_EventHandlers {
     class RscDisplayMain {
         Crusader_Disable_ACE_loadMainMenuBox = "_this select 0 displayCtrl 80090 ctrlShow False";
+        Crusader_Disable_PO_ProjectOPFORLogo = "_this select 0 displayCtrl 1299 ctrlShow False";
     };
 };
 
@@ -82,27 +116,27 @@ class Extended_DisplayLoad_EventHandlers {
 class RscTitles 
 {
     class RscDisplayMainMenuBackground
-	{
-		class Controls
-		{
-			class Picture: RscPicture
-			{
-				idc = 102;
-				text = QPATHTOF(assets\main_menu\images\CrusaderMainMenu.jpg);
-				x = "safezoneX";
-				y = "safezoneY";
-				w = "safezoneW";
-				h = "safeZoneH";
-			};
-		};
-	};
+    {
+        class Controls
+        {
+            class Picture: RscPicture
+            {
+                idc = 102;
+                text = QPATHTOF(assets\main_menu\images\CrusaderMainMenu.jpg);
+                x = "safezoneX";
+                y = "safezoneY";
+                w = "safezoneW";
+                h = "safeZoneH";
+            };
+        };
+    };
 };
 
 // Disables the middel spotlight box
 class RscMainMenuSpotlight: RscControlsGroupNoScrollbars
 {
-	show = 0;
-	onLoad = "";
+    show = 0;
+    onLoad = "";
 };
 
 // Disables default arma infos
@@ -154,19 +188,39 @@ class RscDisplayMain: RscStandardDisplay
             show=0;
             onload="";
         };
-        class logo: RscActivePicture // Remove default arma logo and replace with custom one
+        class Logo: RscActivePicture // Remove default arma logo and replace with custom one
         { 
             text = QPATHTOF(assets\main_menu\images\CrusaderLogo.paa);
             tooltip = CSTRING(MAINMENU_ArmaLogo_ReplacementIcon_DESC);
             url = "https://xn--kommandokrfte-crusader-94b.de/";
             onButtonClick = "";
             onload = "";
+            x = "0.54 -  5 *  (pixelW * pixelGrid * 2)"; // Position X
+            y = "safezoneY + (3 - 0.59 *  5) *  (pixelH * pixelGrid * 2)"; // Position Y
+            w = "1.4 *  5 *  (pixelW * pixelGrid * 2)"; // Modify weight of the image
+            h = "1.4 *  5 *  (pixelH * pixelGrid * 2)"; // Modify height of the image 
         };
-        class logoApex: logo 
+        class logoApex: Logo
         {
             show = 0;
             onload = "";
             text = "";
+        };
+        class BackgroundBar: RscText
+        {
+            show = 1;
+        };
+        class BackgroundCenter: BackgroundBar
+        {
+            show = 0;
+        };
+        class BackgroundBarLeft: RscPicture
+        {
+            show = 0;
+        };
+        class BackgroundBarRight: BackgroundBarLeft
+        {
+            show = 0;
         };
         class infomods: RscControlsGroupNoHScrollbars 
         {
@@ -188,83 +242,86 @@ class RscDisplayMain: RscStandardDisplay
         {
             show = 0;
         };
+        class Footer: RscText
+        {
+            show = 0;
+        };
         class GroupSingleplayer: RscControlsGroupNoScrollbars // Call Controls from GroupSingleplayer to inherit it in GroupMultiplayer
-		{
-			class Controls;
-		};
-		class GroupMultiplayer: GroupSingleplayer
-		{
-			h = "(9 *     1.5) *     (pixelH * pixelGrid * 2)";
-			class Controls: Controls
-			{
-				class Campaigns;
-				class join_CrusaderServer: Campaigns // Custom join button that is shown below normal multiplayer buttons
-				{
-					idc = -1;
-					text = CSTRING(MAINMENU_ArmaServer_Connect);
+        {
+            class Controls;
+        };
+        class GroupMultiplayer: GroupSingleplayer
+        {
+            h = "(9 *     1.5) *     (pixelH * pixelGrid * 2)";
+            class Controls: Controls
+            {
+                class Campaigns;
+                class join_CrusaderServer: Campaigns // Custom join button that is shown below normal multiplayer buttons
+                {
+                    idc = -1;
+                    text = CSTRING(MAINMENU_ArmaServer_Connect);
                     tooltip = CSTRING(MAINMENU_ArmaServer_Connect_DESC);
-					colorFocused[] = {1,1,1,1};
-					y = "(3 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
-					action = "";
-					onbuttonclick = "connectToServer ['116.202.209.137', 2302, ''];";
-					Onload = "";
-				};
+                    y = "(3 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
+                    action = "";
+                    onbuttonclick = "connectToServer ['116.202.209.137', 2302, ''];";
+                    Onload = "";
+                };
                 class join_CrusaderTeamSpeak: join_CrusaderServer // Custom join button for teamspeak
-				{
-					text = CSTRING(MAINMENU_TeamSpeak_Connect);
-					tooltip = CSTRING(MAINMENU_TeamSpeak_Connect_DESC);
+                {
+                    text = CSTRING(MAINMENU_TeamSpeak_Connect);
+                    tooltip = CSTRING(MAINMENU_TeamSpeak_Connect_DESC);
                     url = "ts3server://185.249.199.144?port=9022";
-					y = "(4 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
-					onbuttonclick = "";
-				};
-			};
-		};
+                    y = "(4 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
+                    onbuttonclick = "";
+                };
+            };
+        };
     };
 };
 
 // Override cutsene for default maps
 class CfgWorlds 
 {
-	class CAWorld;
-	class Altis : CAWorld 
+    class CAWorld;
+    class Altis : CAWorld 
     {
-		cutscenes[] = {"Main_Menu_Intro"};
-	};
-	
-	class Stratis : CAWorld 
+        cutscenes[] = {"Main_Menu_Intro"};
+    };
+    
+    class Stratis : CAWorld 
     {
-		cutscenes[] = {"Main_Menu_Intro"};
-	};
+        cutscenes[] = {"Main_Menu_Intro"};
+    };
 
-	class Enoch : CAWorld 
+    class Enoch : CAWorld 
     {
-		cutscenes[] = {"Main_Menu_Intro"};
-	};
+        cutscenes[] = {"Main_Menu_Intro"};
+    };
 
-	class VR : CAWorld 
+    class VR : CAWorld 
     {
-		cutscenes[] = {"Main_Menu_Intro"};
-	};
+        cutscenes[] = {"Main_Menu_Intro"};
+    };
 
     class gm_weferlingen_summer : CAWorld
     {
         cutscenes[] = {"Main_Menu_Intro"};
     };
 
-	initWorld = "gm_weferlingen_summer";
-	demoWorld = "gm_weferlingen_summer";
+    initWorld = "gm_weferlingen_summer";
+    demoWorld = "gm_weferlingen_summer";
 };
 
 // Define a new mission to use in cutsene
 class CfgMissions
 {
-	class Cutscenes
-	{
-		class Main_Menu_Intro
-		{
-			directory = "z\crusader\addons\utilities\assets\main_menu\mainmenu.gm_weferlingen_summer"; // Path to scenario with the scene
-		};
-	};
+    class Cutscenes
+    {
+        class Main_Menu_Intro
+        {
+            directory = "z\crusader\addons\utilities\assets\main_menu\mainmenu.gm_weferlingen_summer"; // Path to scenario with the scene
+        };
+    };
 };
 
 

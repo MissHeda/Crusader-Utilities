@@ -58,3 +58,6 @@ parameters = [
 
     #   '"C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia\mpmissions\KAT%20-%20Advanced%20Medicical%20Training%20Mission.Stratis\mission.sqm"'
 ]
+dlc = [
+    "Global Mobilization"
+]

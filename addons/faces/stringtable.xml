@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="crusader">
+    <Package name="faces">
+        <Key ID="STR_crusader_faces_SETTING_SubCategory_CamoCream">
+            <English>Camo Cream</English>
+            <German>Tarnschminke</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_CamoCream_Enable">
+            <English>Allow Camo Cream Interactions</English>
+            <German>Aktiviere Tarnschminke Interaktionen</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_CamoCream_Enable_DESC">
+            <English>Allows users to apply and remove camo cream via ace interaction.</English>
+            <German>Ermöglicht den Spielern das auftragen und abtragen von Tarnschminke via Ace.</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_CamoCream_RequireItem">
+            <English>Require Item</English>
+            <German>Benötigt Gegenstand</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_CamoCream_RequireItem_DESC">
+            <English>If enabled the user needs to have the camo cream item in their inventory to apply it.</English>
+            <German>Wenn aktiviert braucht der Spieler den Tarnschminke Gegenstand um sich schminken zu können.</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_CamoCream_RequiredTime">
+            <English>Required Time</English>
+            <German>Benötigte Zeit</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_CamoCream_RequiredTime_DESC">
+            <English>The time that is required to apply and remove camo cream.</English>
+            <German>Die Zeit die benötigt wird um sich Tarnschminke auf- oder abzutragen.</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_allowedFacesHashMap">
+            <English>Custom Faces Array</English>
+            <German>Benutzerdefinierter Gesichter Array</German>
+        </Key>
+        <Key ID="STR_crusader_faces_SETTING_allowedFacesHashMap_DESC">
+            <English>Here you can add faces that should be allowed to use the camo cream and their according camo face counterpart.\n To add a face simply add a , (not if this is the first entry) and a new array with the normal face className first, then the camo face className. It should look like this:\n [Carter, Carter_Tactical], [Medrano, Medrano_Tactical], [NormalHead, CamoHead]</English>
+            <German>Hier können Sie Gesichter hinzufügen, die berechtigt sind, die Tarnschminke zu verwenden, und ihr entsprechende tarn Gegenpart.\n Um ein Gesicht hinzuzufügen, fügen Sie einfach ein , hinzu (nicht, wenn dies der erste Eintrag ist) und ein neues Array mit dem normalen Gesichtsklassenname (className) zuerst, dann der Tarn-Gesichtsklassenname (className). Es sollte dann so aussehen:\n[Carter, Carter_Tactical], [Medrano, Medrano_Tactical], [NormalerKopf, TarnKopf]</German>
+        </Key>
+        <Key ID="STR_crusader_faces_Interaction_Apply">
+            <English>Apply Camo Cream</English>
+            <German>Tarnschminke Auftragen</German>
+        </Key>
+        <Key ID="STR_crusader_faces_Interaction_Remove">
+            <English>Remove Camo Cream</English>
+            <German>Tarnschminke Abtragen</German>
+        </Key>
+        <Key ID="STR_crusader_faces_ProgressBar_Applying">
+            <English>Applying Camo Cream</English>
+            <German>Trage Tarnschminke auf</German>
+        </Key>
+        <Key ID="STR_crusader_faces_ProgressBar_Removing">
+            <English>Removing Camo Cream</English>
+            <German>Wische Tarnschminke ab</German>
+        </Key>
+        <Key ID="STR_crusader_faces_CamoCream_DisplayName">
+            <English>Camo Cream</English>
+            <German>Tarnschminke</German>
+        </Key>
+        <Key ID="STR_crusader_faces_CamoCream_DescShort">
+            <English>Can be used to apply camouflage makeup.</English>
+            <German>Kann benutzt werden um sich mit Tarnschminke zu tarnen.</German>
+        </Key>
+    </Package>
+</Project>

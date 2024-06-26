@@ -14,4 +14,11 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_UTILITIES
 #endif
 
+#define CAN_CREATE_NONE    -1
+#define CAN_CREATE_ADMIN    0
+#define CAN_CREATE_CONSOLE  1
+#define CAN_CREATE_ALL      2
+
 #include "\z\crusader\addons\main\script_macros.hpp"
+
+

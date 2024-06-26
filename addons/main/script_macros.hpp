@@ -105,4 +105,25 @@
 #define QPATHTOF_SOUND(var1) QUOTE(PATHTOF2_SYS(PREFIX,COMPONENT,var1))
 #define QQPATHTOF_SOUND(var1) QUOTE(QPATHTOF_SOUND(var1))
 
+/* -------------------------------------------
+Macro: IS_ADMIN_LOGGED
+    Check if the local machine is a logged in admin in the multiplayer environment.
+
+    Reports 'false' if the player was voted to be the admin.
+
+Parameters:
+    None
+
+Example:
+    (begin example)
+        // print "true" if player is admin and entered in the server password
+        systemChat str IS_ADMIN_LOGGED;
+    (end)
+
+Author:
+    commy2
+------------------------------------------- */
+#define IS_ADMIN_LOGGED_SYS(x) x##shutdown
+#define IS_ADMIN_LOGGED serverCommandAvailable 'IS_ADMIN_LOGGED_SYS(#)'
+
 #include "script_debug.hpp"

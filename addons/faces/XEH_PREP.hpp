@@ -1,0 +1,2 @@
+PREP(conditionCamoCream);
+PREP(toggleCamoCream);

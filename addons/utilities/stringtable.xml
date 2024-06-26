@@ -5,6 +5,14 @@
             <English>Zeus SteamID System</English>
             <German>Zeus SteamID System</German>
         </Key>
+        <Key ID="STR_crusader_utilities_SETTING_SubCategory_LoadoutSystem">
+            <English>Loadout System</English>
+            <German>Loadout System</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_SubCategory_LoadoutsCommand">
+            <English>Loadout Command</English>
+            <German>Loadout Kommand</German>
+        </Key>
         <Key ID="STR_crusader_utilities_SETTING_ZeusSystem_Enable">
             <English>Enable ACE Zeus via SteamID</English>
             <German>Aktiviere ACE Zeus via SteamID</German>
@@ -20,6 +28,74 @@
         <Key ID="STR_crusader_utilities_SETTING_ZeusSystem_List_DESC">
             <English>A list of SteamIDs that is used to allow players to give themselfs zeus via ace.\nTo add IDs just simply add a , and put the new ID behind it, repeat this for every new entry.</English>
             <German>Eine Liste von SteamIDs, die verwendet wird, um Spielern zu ermöglichen, sich selbst Zeus über ACE zu geben. \nUm IDs hinzuzufügen, fügen Sie einfach ein Komma hinzu und setzen Sie die neue ID dahinter. Wiederholen Sie diesen Vorgang für jeden neuen Eintrag.</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystem_Enable">
+            <English>Enable Loadout System</English>
+            <German>Aktiviere Loadout System</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystem_Enable_DESC">
+            <English>Enables the whole loadout system.</English>
+            <German>Aktiviert das gesamten Loadout System.</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_Enable">
+            <English>Allowed Self Interactions</English>
+            <German>Erlaubte Selbst Interaktionen</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_Enable_DESC">
+            <English>Sets which ace self interactions should be usable for the players.</English>
+            <German>Bestimmt welche ace selbst Interaktionen für die Spieler angezeigt werden.</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_None">
+            <English>None</English>
+            <German>Keine</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_All">
+            <English>All</English>
+            <German>Alle</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_Save_Load">
+            <English>Save &amp; Load</English>
+            <German>Speichern &amp; Laden</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_Save">
+            <English>Only Save</English>
+            <German>Nur Speichern</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_Load">
+            <English>Only Load</English>
+            <German>Nur Laden</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_Settings">
+            <English>Only Settings</English>
+            <German>Nur Einstellungen</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_SpawnLoadout_Enable">
+            <English>Allow Spawn Loadout</English>
+            <German>Erlaube Respawn Loadout</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_SpawnLoadout_Enable_DESC">
+            <English>If enabled users will spawn with their spawn loadout when connecting to the server.</English>
+            <German>Wenn diese Option aktiviert ist, werden Spieler mit ihrem Spawn Loadout spawnen.</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_RespawnLoadout_Enable">
+            <English>Allow Respawn Loadout</English>
+            <German>Erlaube Respawn Loadout</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_RespawnLoadout_Enable_DESC">
+            <English>If enabled respawn with their set respawn loadout.</English>
+            <German>Wenn diese Option aktiviert ist, werden Spieler mit ihrem Respawn Loadout respawnen.</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_DeletePlayersBody_Enable">
+            <English>Delete Player Body On Respawn</English>
+            <German>Lösche die Leiche des Spielers beim Respawn</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_DeletePlayersBody_Enable_DESC">
+            <English>Sets if the body from a player should be deleted when they respawn.</English>
+            <German>Legt fest, ob die Leiche eines Spielers beim Respawn gelöscht werden soll.</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_KEYBINDS_BettIR_NVGFIX">
+            <English>BettIR) Toggle Goggles Illuminator (Fix for BettIR)</English>
+            <German>BettIR) Toggle Goggles Illuminator (Fix für BettIR)</German>
         </Key>
         <Key ID="STR_crusader_utilities_MAINMENU_ArmaServer_Connect">
             <English>Crusader Server</English>
@@ -40,6 +116,182 @@
         <Key ID="STR_crusader_utilities_MAINMENU_ArmaLogo_ReplacementIcon_DESC">
             <English>Kommandokräfte Crusader Website</English>
             <German>Kommandokräfte Crusader Webseite</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem">
+            <English>Loadout System</English>
+            <German>Loadout System</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Save">
+            <English>Save Current Loadout</English>
+            <German>Loadout Speichern</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Load">
+            <English>Load Loadout</English>
+            <German>Loadout Laden</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Settings">
+            <English>Settings</English>
+            <German>Einstellungen</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Spawn">
+            <English>Set Spawn Loadout</English>
+            <German>Setze Spawn Loadout</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Respawn">
+            <English>Set Respawn Loadout</English>
+            <German>Setze Respawn Loadout</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Default">
+            <English>Default (Server Choosen)</English>
+            <German>Standard (Server Entscheidet)</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Respawn_DeathGear">
+            <English>Gear Before Death</English>
+            <German>Ausrüstung vor Tod</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Loadout_1">
+            <English>Loadout 1</English>
+            <German>Loadout 1</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Loadout_2">
+            <English>Loadout 2</English>
+            <German>Loadout 2</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Loadout_3">
+            <English>Loadout 3</English>
+            <German>Loadout 3</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Loadout_4">
+            <English>Loadout 4</English>
+            <German>Loadout 4</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Loadout_5">
+            <English>Loadout 5</English>
+            <German>Loadout 5</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Loadout_6">
+            <English>Loadout 6</English>
+            <German>Loadout 6</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_Loadouts">
+            <English>Loadouts</English>
+            <German>Ausrüstung</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_Alpha">
+            <English>Alpha</English>
+            <German>Alpha</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_Bravo">
+            <English>Bravo</English>
+            <German>Bravo</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_Charlie">
+            <English>Charlie</English>
+            <German>Charlie</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_Delta">
+            <English>Delta</English>
+            <German>Delta</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_Echo">
+            <English>Echo</English>
+            <German>Echo</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_TOC">
+            <English>T. O. C.</English>
+            <German>Ausrüstung</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Alpha_Truppfuehrer">
+            <English>Squad Leader</English>
+            <German>Truppführer</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Alpha_FunkerJTAC">
+            <English>Radioman - JTAC</English>
+            <German>Funker - JTAC</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Alpha_KommandoMedic">
+            <English>Commando - Medic</English>
+            <German>Kommando - Medic</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO">
+            <English>Reconnaissance Sergeant - TEO</English>
+            <German>Aufklärungsfeldwebel - TEO</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Alpha_WaffenspezialistAssaulter">
+            <English>Weapons Specialist - Assaulter</English>
+            <German>Waffenspezialist - Assaulter</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Alpha_OeffnungstechnikerBreacher">
+            <English>Opening Technician - Breacher</English>
+            <German>Öffnungstechniker - Breacher</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Charlie_TruppfuehrerNotfallsanitaeter">
+            <English>Squad Leader - Emergency Paramedic</English>
+            <German>Truppführer - Notfallsanitäter</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Charlie_TruppfeldwebelNotfallsanitaeter">
+            <English>Squad Sergeant - Emergency Paramedic</English>
+            <German>Truppfeldwebel - Notfallsanitäter</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Charlie_EinsatzsanitaeterCFRC">
+            <English>Combat Medic - CFR-C</English>
+            <German>Einsatzsanitäter - CFR-C</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Charlie_SanitaetsoffizierArzt">
+            <English>Medical Officer - Doctor</English>
+            <German>Sanitätsoffizier - Arzt</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Delta_Spotter">
+            <English>Spotter</English>
+            <German>Beobachter</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Delta_Sniper">
+            <English>Sniper</English>
+            <German>Kommandoscharfschütze</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_Gruppenfuehrer">
+            <English>Group Leader</English>
+            <German>Gruppenführer</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_stvGruppenfuehrer">
+            <English>Deputy Group Leader</English>
+            <German>Stv. Gruppenführer</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_Funker">
+            <English>Radioman</English>
+            <German>Funker</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_Sanitaeter">
+            <English>Medic</English>
+            <German>Sanitäter</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_AssaulterAT">
+            <English>Assaulter / AT</English>
+            <German>Assaulter / AT</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_DMRSchuetze">
+            <English>DMR Marksman</English>
+            <German>DMR Schütze</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_PionierBreacher">
+            <English>Pionier / Breacher</English>
+            <German>Pionier / Breacher</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Echo_SchwererWaffentraeger">
+            <English>Heavy Weapons Carrier</English>
+            <German>Schwerer Waffenträger</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_TOC_TOCKommandeur">
+            <English>TOC Commander</English>
+            <German>TOC Kommandeur</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_TOC_OperationsOffizier">
+            <English>Operations Officer</English>
+            <German>Operations Offizier</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_TOC_KommunikationsOffizier">
+            <English>Communications Officer</English>
+            <German>Kommunikations Offizier</German>
         </Key>
     </Package>
 </Project>

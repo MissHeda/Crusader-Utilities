@@ -1,0 +1,16 @@
+class CfgMusic {
+	
+	tracks[] = {"Crusader_Intro", "Crusader_Intro_2"};
+
+	class Crusader_Intro {
+		name = "Crusader_Intro";
+		sound[] = {"Crusader_Intro.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class Crusader_Intro_2 {
+		name = "Crusader_Intro_2";
+		sound[] = {"This_is_War_remix.ogg", 1, 1};
+		titles[] = {};
+	};
+};

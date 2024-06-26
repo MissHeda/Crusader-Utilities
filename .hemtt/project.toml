@@ -11,7 +11,8 @@ mainprefix = "z"
 include = [
     "mod.cpp",
     "LICENSE.md",
-    "CrusaderLogo.paa"
+    "LogoHigh.paa",
+    "LogoLow.paa"
 ]
 
 [version]
@@ -48,12 +49,15 @@ workshop = [
     "450814997", # CBA_A3's Workshop ID
     "463939057", # ACE3's Workshop ID
     "1779063631", # Zeus Enhanced
-    "2369477168" # Advanced Dev Tools
+    "2369477168", # Advanced Dev Tools
+    "3190098290", # rank mod (TEMP)
+    "1200127537", # BW Mod (TEMP)
+    "2260572637", # BettIR (TEMP)
+    "1795825073", # USP (TEMP)
+    "1412917989",
+    "3239124130" # Simunation pack
 ]
 parameters = [
-    "-skipIntro",           # These parameters are passed to the Arma 3 executable
-    "-noSplash",            # They do not need to be added to your list
-    "-showScriptErrors",    # You can add additional parameters here
     '"-profiles=C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia"'
 
     #   '"C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia\mpmissions\KAT%20-%20Advanced%20Medicical%20Training%20Mission.Stratis\mission.sqm"'

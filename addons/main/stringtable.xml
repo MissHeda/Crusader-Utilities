@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="crusader">
+    <Package name="main">
+        <Key ID="STR_crusader_main_URL">
+            <English>https://steamcommunity.com/sharedfiles/filedetails/?id=3200687543</English>
+            <German>https://steamcommunity.com/sharedfiles/filedetails/?id=3200687543</German>
+        </Key>
+    </Package>
+</Project>

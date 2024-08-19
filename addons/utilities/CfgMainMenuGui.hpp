@@ -286,7 +286,7 @@ class RscDisplayMain: RscStandardDisplay
                     text = CSTRING(MAINMENU_ArmaServer_Connect);
                     tooltip = CSTRING(MAINMENU_ArmaServer_Connect_DESC);
                     y = "(3 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
-                    onbuttonclick = "connectToServer ['116.202.209.137', 2302, ''];";
+                    onbuttonclick = "connectToServer ['162.55.107.229', 2302, ''];";
                 };
                 class join_CrusaderTeamSpeak: join_CrusaderServer // Custom join button for teamspeak
                 {

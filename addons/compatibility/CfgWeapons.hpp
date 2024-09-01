@@ -24,10 +24,12 @@ class CfgWeapons {
     };
 
     //////////////////// BW MOD MAGAZINE WELL ADD BY US ////////////////////
+    /* WIP
     class BWA3_G36A1: Rifle_Base_F {
         magazines[] = {"BWA3_30Rnd_556x45_G36","BWA3_30Rnd_556x45_G36_Tracer","BWA3_30Rnd_556x45_G36_Tracer_Dim","BWA3_30Rnd_556x45_G36_SD","BWA3_30Rnd_556x45_G36_AP"};
         magazineWell[] = {"BWmodMagazineWell"}; // in Magazines
     };
+    */
 
     //////////////////// UPS ACE Config ////////////////////
     class UniformItem: InventoryItem_Base_F

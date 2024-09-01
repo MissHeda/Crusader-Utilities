@@ -33,6 +33,6 @@ class CfgPatches {
 
 #include "CfgBettIR.hpp"
 #include "CfgCustomRanks.hpp"
-#include "CfgMagazines.hpp"
+//#include "CfgMagazines.hpp" WIP
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"

@@ -1,3 +1,4 @@
+// IS NOT INCLUDED IN CPP DUE TO IT BEING WIP
 class CfgMagazines {
 	class CA_Magazine;
 	class BWA3_30Rnd_556x45_G36;

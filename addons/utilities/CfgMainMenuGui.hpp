@@ -261,8 +261,9 @@ class RscDisplayMain: RscStandardDisplay
         class Logo: RscActivePicture // Remove default arma logo and replace with custom one
         { 
             text = Main_Menu_Logo
-            tooltip = CSTRING(MAINMENU_ArmaLogo_ReplacementIcon_DESC);
-            url = "https://xn--kommandokrfte-crusader-94b.de/";
+            tooltip = "";
+            //tooltip = CSTRING(MAINMENU_ArmaLogo_ReplacementIcon_DESC);
+            //url = "https://xn--kommandokrfte-crusader-94b.de/";
             onButtonClick = "";
             onload = "";
             x = "0.54 -  5 *  (pixelW * pixelGrid * 2)"; // Position X (change first value (0.54))
@@ -292,7 +293,7 @@ class RscDisplayMain: RscStandardDisplay
                 {
                     text = CSTRING(MAINMENU_TeamSpeak_Connect);
                     tooltip = CSTRING(MAINMENU_TeamSpeak_Connect_DESC);
-                    url = "ts3server://185.249.199.144?port=9022&addbookmark=Kommandokr%C3%A4fte%20Crusader";
+                    url = "ts3server://162.55.107.229";
                     y = "(4 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
                     onbuttonclick = "";
                 };

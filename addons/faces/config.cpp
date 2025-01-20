@@ -5,7 +5,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         units[] = {};
         weapons[] = {
-            "crusader_CamoCream"
+            "Crusader_CamoCream"
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

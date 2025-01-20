@@ -31,6 +31,9 @@
 // Associates a pretty name to a keybinding mod entry.
 ["Crusader", "Kommandokräfte Crusader - Keybinds"] call CBA_fnc_registerKeybindModPrettyName;
 
+/* Currently disabled due to it working randomly. GOTTA RECHECK !!!
+
+
 // Override the BettIR settings so the keybind works
 [
     "BettIR", 
@@ -48,3 +51,4 @@
     "", 
     true
 ] call CBA_fnc_addKeybind;
+*/

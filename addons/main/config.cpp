@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = COMPONENT_NAME;
+        name = "crusader_main"; // TEMP TRY TO FIX STEAM ERROR
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

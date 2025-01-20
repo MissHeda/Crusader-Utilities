@@ -9,7 +9,7 @@
  * 1: position <ARRAY> (optional, default: "")
  *
  * Return Value:
- * Bool
+ * None
  *
  * Example:
  * [cursorObject, false, 2, [0,0,1]] call crusader_utilities_fnc_addCrusaderLoadouts;

@@ -6,7 +6,8 @@
  * Arguments:
  * 0: cursorObject <OBJECT>
  * 1: add to ace main action <BOOL> (default: false)
- * 1: position <ARRAY> (optional, default: "")
+ * 2: range <NUMBER>
+ * 3: position <ARRAY> (optional, default: "")
  *
  * Return Value:
  * None

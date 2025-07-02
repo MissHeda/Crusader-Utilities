@@ -3,6 +3,8 @@
 // Class list: https://github.com/tacticalrealism/etr_ranks/blob/main/addons/assets/insignias.hpp
 // The steamIDs are sepcified in script_component.hpp
 
+// CURRENTLY DISABLED VIA CONFIG.CPP DUE TO USING CBA OPTION
+
 class etr_ranks_uids {
     class germany {
         or1_soldat [] = {};

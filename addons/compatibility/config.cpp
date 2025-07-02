@@ -16,6 +16,6 @@ class CfgPatches {
 };
 
 #include "CfgBettIR.hpp"
-#include "CfgCustomRanks.hpp"
+// #include "CfgCustomRanks.hpp" See reason in HPP
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"

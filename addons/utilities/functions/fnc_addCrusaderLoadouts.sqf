@@ -48,12 +48,12 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
  
     // ---------------------- Alpha ----------------------
 	
-    private _alpha = [QGVAR(Loadouts_Alpha),LLSTRING(Interaction_LoadoutCommand_Alpha), "", 
+    private _alpha = [QGVAR(Loadouts_Alpha),LLSTRING(Interaction_LoadoutCommand_Alpha), QPATHTOF(assets\ui\Element_Alpha.paa), 
     { }, { true }, {
         
 
         // Truppführer
-        private _truppfuehrer = [QGVAR(LoadoutCommand_Alpha_Truppfuehrer),LLSTRING(LoadoutCommand_Alpha_Truppfuehrer), "", 
+        private _truppfuehrer = [QGVAR(LoadoutCommand_Alpha_Truppfuehrer),LLSTRING(LoadoutCommand_Alpha_Truppfuehrer), QPATHTOF(assets\ui\Element_Alpha.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -62,7 +62,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Funker - JTAC
-        private _funkerJTAC = [QGVAR(LoadoutCommand_Alpha_FunkerJTAC),LLSTRING(LoadoutCommand_Alpha_FunkerJTAC), "", 
+        private _funkerJTAC = [QGVAR(LoadoutCommand_Alpha_FunkerJTAC),LLSTRING(LoadoutCommand_Alpha_FunkerJTAC), QPATHTOF(assets\ui\Element_Alpha.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -71,7 +71,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Kommando Medic
-        private _kommandoMedic = [QGVAR(LoadoutCommand_Alpha_KommandoMedic),LLSTRING(LoadoutCommand_Alpha_KommandoMedic), "", 
+        private _kommandoMedic = [QGVAR(LoadoutCommand_Alpha_KommandoMedic),LLSTRING(LoadoutCommand_Alpha_KommandoMedic), QPATHTOF(assets\ui\Element_Alpha.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -80,7 +80,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Aufklärungsfeldwebel TEO
-        private _aufklaerungsfeldwebelTEO = [QGVAR(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO),LLSTRING(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO), "", 
+        private _aufklaerungsfeldwebelTEO = [QGVAR(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO),LLSTRING(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO), QPATHTOF(assets\ui\Element_Alpha.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -89,7 +89,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Waffenspezialist Assaulter
-        private _waffenspezialistAssaulter = [QGVAR(LoadoutCommand_Alpha_WaffenspezialistAssaulter),LLSTRING(LoadoutCommand_Alpha_WaffenspezialistAssaulter), "", 
+        private _waffenspezialistAssaulter = [QGVAR(LoadoutCommand_Alpha_WaffenspezialistAssaulter),LLSTRING(LoadoutCommand_Alpha_WaffenspezialistAssaulter), QPATHTOF(assets\ui\Element_Alpha.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -98,7 +98,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Öffnungstechniker Breacher
-        private _oeffnungstechnikerBreacher = [QGVAR(LoadoutCommand_Alpha_OeffnungstechnikerBreacher),LLSTRING(LoadoutCommand_Alpha_OeffnungstechnikerBreacher), "", 
+        private _oeffnungstechnikerBreacher = [QGVAR(LoadoutCommand_Alpha_OeffnungstechnikerBreacher),LLSTRING(LoadoutCommand_Alpha_OeffnungstechnikerBreacher), QPATHTOF(assets\ui\Element_Alpha.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -119,12 +119,12 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
     // ---------------------- Bravo ----------------------
     // Note: Bravo uses the same strings as alpha due to them having the same names
 	
-    private _bravo = [QGVAR(Loadouts_Bravo),LLSTRING(Interaction_LoadoutCommand_Bravo), "", 
+    private _bravo = [QGVAR(Loadouts_Bravo),LLSTRING(Interaction_LoadoutCommand_Bravo), QPATHTOF(assets\ui\Element_Bravo.paa), 
     { }, { true }, {
         
 
         // Truppführer
-        private _truppfuehrer = [QGVAR(LoadoutCommand_Alpha_Truppfuehrer),LLSTRING(LoadoutCommand_Alpha_Truppfuehrer), "", 
+        private _truppfuehrer = [QGVAR(LoadoutCommand_Alpha_Truppfuehrer),LLSTRING(LoadoutCommand_Alpha_Truppfuehrer), QPATHTOF(assets\ui\Element_Bravo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -133,7 +133,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Funker - JTAC
-        private _funkerJTAC = [QGVAR(LoadoutCommand_Alpha_FunkerJTAC),LLSTRING(LoadoutCommand_Alpha_FunkerJTAC), "", 
+        private _funkerJTAC = [QGVAR(LoadoutCommand_Alpha_FunkerJTAC),LLSTRING(LoadoutCommand_Alpha_FunkerJTAC), QPATHTOF(assets\ui\Element_Bravo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -142,7 +142,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Kommando Medic
-        private _kommandoMedic = [QGVAR(LoadoutCommand_Alpha_KommandoMedic),LLSTRING(LoadoutCommand_Alpha_KommandoMedic), "", 
+        private _kommandoMedic = [QGVAR(LoadoutCommand_Alpha_KommandoMedic),LLSTRING(LoadoutCommand_Alpha_KommandoMedic), QPATHTOF(assets\ui\Element_Bravo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -151,7 +151,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Aufklärungsfeldwebel TEO
-        private _aufklaerungsfeldwebelTEO = [QGVAR(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO),LLSTRING(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO), "", 
+        private _aufklaerungsfeldwebelTEO = [QGVAR(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO),LLSTRING(LoadoutCommand_Alpha_AufklaerungsfeldwebelTEO), QPATHTOF(assets\ui\Element_Bravo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -160,7 +160,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Waffenspezialist Assaulter
-        private _waffenspezialistAssaulter = [QGVAR(LoadoutCommand_Alpha_WaffenspezialistAssaulter),LLSTRING(LoadoutCommand_Alpha_WaffenspezialistAssaulter), "", 
+        private _waffenspezialistAssaulter = [QGVAR(LoadoutCommand_Alpha_WaffenspezialistAssaulter),LLSTRING(LoadoutCommand_Alpha_WaffenspezialistAssaulter), QPATHTOF(assets\ui\Element_Bravo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -169,7 +169,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Öffnungstechniker Breacher
-        private _oeffnungstechnikerBreacher = [QGVAR(LoadoutCommand_Alpha_OeffnungstechnikerBreacher),LLSTRING(LoadoutCommand_Alpha_OeffnungstechnikerBreacher), "", 
+        private _oeffnungstechnikerBreacher = [QGVAR(LoadoutCommand_Alpha_OeffnungstechnikerBreacher),LLSTRING(LoadoutCommand_Alpha_OeffnungstechnikerBreacher), QPATHTOF(assets\ui\Element_Bravo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -190,12 +190,12 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
     // ---------------------- Charlie ----------------------
 
-    private _charlie = [QGVAR(Loadouts_Charlie),LLSTRING(Interaction_LoadoutCommand_Charlie), "", 
+    private _charlie = [QGVAR(Loadouts_Charlie),LLSTRING(Interaction_LoadoutCommand_Charlie), QPATHTOF(assets\ui\Element_Charlie.paa), 
     { }, { true }, {
 
 
         // Truppführer - Notfallsanitäter
-        private _truppfuehrerNotfallsanitaeter = [QGVAR(LoadoutCommand_Charlie_TruppfuehrerNotfallsanitaeter),LLSTRING(LoadoutCommand_Charlie_TruppfuehrerNotfallsanitaeter), "", 
+        private _truppfuehrerNotfallsanitaeter = [QGVAR(LoadoutCommand_Charlie_TruppfuehrerNotfallsanitaeter),LLSTRING(LoadoutCommand_Charlie_TruppfuehrerNotfallsanitaeter), QPATHTOF(assets\ui\Element_Charlie.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -204,7 +204,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Truppfeldwebel - Notfallsanitäter
-        private _truppfeldwebelNotfallsanitaeter = [QGVAR(LoadoutCommand_Charlie_TruppfeldwebelNotfallsanitaeter),LLSTRING(LoadoutCommand_Charlie_TruppfeldwebelNotfallsanitaeter), "", 
+        private _truppfeldwebelNotfallsanitaeter = [QGVAR(LoadoutCommand_Charlie_TruppfeldwebelNotfallsanitaeter),LLSTRING(LoadoutCommand_Charlie_TruppfeldwebelNotfallsanitaeter), QPATHTOF(assets\ui\Element_Charlie.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -213,7 +213,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Einsatzsanitäter - CFR-C
-        private _einsatzsanitaeterCFRC = [QGVAR(LoadoutCommand_Charlie_EinsatzsanitaeterCFRC),LLSTRING(LoadoutCommand_Charlie_EinsatzsanitaeterCFRC), "", 
+        private _einsatzsanitaeterCFRC = [QGVAR(LoadoutCommand_Charlie_EinsatzsanitaeterCFRC),LLSTRING(LoadoutCommand_Charlie_EinsatzsanitaeterCFRC), QPATHTOF(assets\ui\Element_Charlie.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -222,7 +222,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Sanitätsoffizier – Arzt
-        private _sanitaetsoffizierArzt = [QGVAR(LoadoutCommand_Charlie_SanitaetsoffizierArzt),LLSTRING(LoadoutCommand_Charlie_SanitaetsoffizierArzt), "", 
+        private _sanitaetsoffizierArzt = [QGVAR(LoadoutCommand_Charlie_SanitaetsoffizierArzt),LLSTRING(LoadoutCommand_Charlie_SanitaetsoffizierArzt), QPATHTOF(assets\ui\Element_Charlie.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -241,12 +241,12 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
     
     // ---------------------- Delta ----------------------
 
-    private _delta = [QGVAR(Loadouts_Delta),LLSTRING(Interaction_LoadoutCommand_Delta), "", 
+    private _delta = [QGVAR(Loadouts_Delta),LLSTRING(Interaction_LoadoutCommand_Delta), QPATHTOF(assets\ui\Element_Delta.paa), 
     { }, { true }, {
 
 
         // Beobachter
-        private _beobachter = [QGVAR(LoadoutCommand_Delta_Spotter),LLSTRING(LoadoutCommand_Delta_Spotter), "", 
+        private _beobachter = [QGVAR(LoadoutCommand_Delta_Spotter),LLSTRING(LoadoutCommand_Delta_Spotter), QPATHTOF(assets\ui\Element_Delta.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -255,7 +255,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Sniper
-        private _sniper = [QGVAR(LoadoutCommand_Delta_Sniper),LLSTRING(LoadoutCommand_Delta_Sniper), "", 
+        private _sniper = [QGVAR(LoadoutCommand_Delta_Sniper),LLSTRING(LoadoutCommand_Delta_Sniper), QPATHTOF(assets\ui\Element_Delta.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -272,11 +272,11 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
     // ---------------------- Echo ----------------------
 
-    private _echo = [QGVAR(Loadouts_Echo),LLSTRING(Interaction_LoadoutCommand_Echo), "", 
+    private _echo = [QGVAR(Loadouts_Echo),LLSTRING(Interaction_LoadoutCommand_Echo), QPATHTOF(assets\ui\Element_Echo.paa), 
     { }, { true }, {
 
         // Gruppenführer
-        private _gruppenfuehrer = [QGVAR(LoadoutCommand_Echo_Gruppenfuehrer),LLSTRING(LoadoutCommand_Echo_Gruppenfuehrer), "", 
+        private _gruppenfuehrer = [QGVAR(LoadoutCommand_Echo_Gruppenfuehrer),LLSTRING(LoadoutCommand_Echo_Gruppenfuehrer), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -285,7 +285,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Stv. Gruppenführer
-        private _stvGruppenfuehrer = [QGVAR(LoadoutCommand_Echo_StvGruppenfuehrer),LLSTRING(LoadoutCommand_Echo_StvGruppenfuehrer), "", 
+        private _stvGruppenfuehrer = [QGVAR(LoadoutCommand_Echo_StvGruppenfuehrer),LLSTRING(LoadoutCommand_Echo_StvGruppenfuehrer), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -294,7 +294,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Funker
-        private _funker = [QGVAR(LoadoutCommand_Echo_Funker),LLSTRING(LoadoutCommand_Echo_Funker), "", 
+        private _funker = [QGVAR(LoadoutCommand_Echo_Funker),LLSTRING(LoadoutCommand_Echo_Funker), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -303,7 +303,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Sanitäter
-        private _sanitaeter = [QGVAR(LoadoutCommand_Echo_Sanitaeter),LLSTRING(LoadoutCommand_Echo_Sanitaeter), "", 
+        private _sanitaeter = [QGVAR(LoadoutCommand_Echo_Sanitaeter),LLSTRING(LoadoutCommand_Echo_Sanitaeter), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -312,7 +312,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Assaulter/AT
-        private _assaulterAT = [QGVAR(LoadoutCommand_Echo_AssaulterAT),LLSTRING(LoadoutCommand_Echo_AssaulterAT), "", 
+        private _assaulterAT = [QGVAR(LoadoutCommand_Echo_AssaulterAT),LLSTRING(LoadoutCommand_Echo_AssaulterAT), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -321,7 +321,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
         
 
         // DMR Schütze
-        private _dMRSchuetze = [QGVAR(LoadoutCommand_Echo_DMRSchuetze),LLSTRING(LoadoutCommand_Echo_DMRSchuetze), "", 
+        private _dMRSchuetze = [QGVAR(LoadoutCommand_Echo_DMRSchuetze),LLSTRING(LoadoutCommand_Echo_DMRSchuetze), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -330,7 +330,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Pionier/Breacher
-        private _pionierBreacher = [QGVAR(LoadoutCommand_Echo_PionierBreacher),LLSTRING(LoadoutCommand_Echo_PionierBreacher), "", 
+        private _pionierBreacher = [QGVAR(LoadoutCommand_Echo_PionierBreacher),LLSTRING(LoadoutCommand_Echo_PionierBreacher), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -339,7 +339,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Schwerer Waffenträger
-        private _schwererWaffentraeger = [QGVAR(LoadoutCommand_Echo_SchwererWaffentraeger),LLSTRING(LoadoutCommand_Echo_SchwererWaffentraeger), "", 
+        private _schwererWaffentraeger = [QGVAR(LoadoutCommand_Echo_SchwererWaffentraeger),LLSTRING(LoadoutCommand_Echo_SchwererWaffentraeger), QPATHTOF(assets\ui\Element_Echo.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -362,12 +362,12 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
     // ---------------------- T.O.C. ----------------------
 
-    private _toc = [QGVAR(Loadouts_TOC),LLSTRING(Interaction_LoadoutCommand_TOC), "", 
+    private _toc = [QGVAR(Loadouts_TOC),LLSTRING(Interaction_LoadoutCommand_TOC), QPATHTOF(assets\ui\Element_TOC.paa), 
     { }, { true }, {
 
 
         // TOC-Kommandeur
-        private _tOCKommandeur = [QGVAR(LoadoutCommand_TOC_TOCKommandeur),LLSTRING(LoadoutCommand_TOC_TOCKommandeur), "", 
+        private _tOCKommandeur = [QGVAR(LoadoutCommand_TOC_TOCKommandeur),LLSTRING(LoadoutCommand_TOC_TOCKommandeur), QPATHTOF(assets\ui\Element_TOC.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -376,7 +376,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Operations-Offizier
-        private _operationsOffizier = [QGVAR(LoadoutCommand_TOC_OperationsOffizier),LLSTRING(LoadoutCommand_TOC_OperationsOffizier), "", 
+        private _operationsOffizier = [QGVAR(LoadoutCommand_TOC_OperationsOffizier),LLSTRING(LoadoutCommand_TOC_OperationsOffizier), QPATHTOF(assets\ui\Element_TOC.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -385,7 +385,7 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
 
         // Kommunikations-Offizier
-        private _kommunikationsOffizier = [QGVAR(LoadoutCommand_TOC_KommunikationsOffizier),LLSTRING(LoadoutCommand_TOC_KommunikationsOffizier), "", 
+        private _kommunikationsOffizier = [QGVAR(LoadoutCommand_TOC_KommunikationsOffizier),LLSTRING(LoadoutCommand_TOC_KommunikationsOffizier), QPATHTOF(assets\ui\Element_TOC.paa), 
         { 
             params ["_target", "_caller", "_arguments"]; 
 
@@ -401,13 +401,160 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
 
     }, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
 
+    // ---------------------- Crusader Loudout System ----------------------
+
+    private _cls = [LLSTRING(Interaction_LoadoutSystem),LLSTRING(Interaction_LoadoutSystem), QPATHTOF(assets\ui\CrusaderLogo_64.paa), 
+    { }, { GVAR(loadoutSystemEnableLoadoutCommand) }, {
+
+        
+        // Save Loadout
+        private _cls_save = [LLSTRING(Interaction_LoadoutSystem_Save),LLSTRING(Interaction_LoadoutSystem_Save), QPATHTOF(assets\ui\Crusader_Interaction_Save.paa), 
+        { }, { true }, {
+
+            params ["_target", "_caller", "_arguments"];
+
+            // 1
+            private _cls_save_1 = [LLSTRING(Interaction_LoadoutSystem_Loadout_1),LLSTRING(Interaction_LoadoutSystem_Loadout_1), QPATHTOF(assets\ui\Crusader_Interaction_Save.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                profileNamespace setVariable [QGVAR(loadout_1),(_caller call CBA_fnc_getLoadout)];
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 2
+            private _cls_save_2 = [LLSTRING(Interaction_LoadoutSystem_Loadout_2),LLSTRING(Interaction_LoadoutSystem_Loadout_2), QPATHTOF(assets\ui\Crusader_Interaction_Save.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                profileNamespace setVariable [QGVAR(loadout_2),(_caller call CBA_fnc_getLoadout)];
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 3
+            private _cls_save_3 = [LLSTRING(Interaction_LoadoutSystem_Loadout_3),LLSTRING(Interaction_LoadoutSystem_Loadout_3), QPATHTOF(assets\ui\Crusader_Interaction_Save.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                profileNamespace setVariable [QGVAR(loadout_3),(_caller call CBA_fnc_getLoadout)];
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 4
+            private _cls_save_4 = [LLSTRING(Interaction_LoadoutSystem_Loadout_4),LLSTRING(Interaction_LoadoutSystem_Loadout_4), QPATHTOF(assets\ui\Crusader_Interaction_Save.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                profileNamespace setVariable [QGVAR(loadout_4),(_caller call CBA_fnc_getLoadout)];
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 5
+            private _cls_save_5 = [LLSTRING(Interaction_LoadoutSystem_Loadout_5),LLSTRING(Interaction_LoadoutSystem_Loadout_5), QPATHTOF(assets\ui\Crusader_Interaction_Save.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                profileNamespace setVariable [QGVAR(loadout_5),(_caller call CBA_fnc_getLoadout)];
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 6
+            private _cls_save_6 = [LLSTRING(Interaction_LoadoutSystem_Loadout_6),LLSTRING(Interaction_LoadoutSystem_Loadout_6), QPATHTOF(assets\ui\Crusader_Interaction_Save.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                profileNamespace setVariable [QGVAR(loadout_6),(_caller call CBA_fnc_getLoadout)];
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+
+            private _actions = [];
+            _actions pushBack [_cls_save_1, [], _target];
+            _actions pushBack [_cls_save_2, [], _target];
+            _actions pushBack [_cls_save_3, [], _target];
+            _actions pushBack [_cls_save_4, [], _target];
+            _actions pushBack [_cls_save_5, [], _target];
+            _actions pushBack [_cls_save_6, [], _target];
+            _actions 
+
+        }, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+
+        // Load Loadout
+        private _cls_load = [LLSTRING(Interaction_LoadoutSystem_Load),LLSTRING(Interaction_LoadoutSystem_Load), QPATHTOF(assets\ui\Crusader_Interaction_Rearm.paa), 
+        { }, { true }, {
+
+            params ["_target", "_caller", "_arguments"];
+
+            // 1
+            private _cls_load_1 = [LLSTRING(Interaction_LoadoutSystem_Loadout_1),LLSTRING(Interaction_LoadoutSystem_Loadout_1), QPATHTOF(assets\ui\Crusader_Interaction_Rearm.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                [_caller,(profileNamespace getVariable QGVAR(loadout_1))] call CBA_fnc_setLoadout;
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 2
+            private _cls_load_2 = [LLSTRING(Interaction_LoadoutSystem_Loadout_2),LLSTRING(Interaction_LoadoutSystem_Loadout_2), QPATHTOF(assets\ui\Crusader_Interaction_Rearm.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                [_caller,(profileNamespace getVariable QGVAR(loadout_2))] call CBA_fnc_setLoadout;
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 3
+            private _cls_load_3 = [LLSTRING(Interaction_LoadoutSystem_Loadout_3),LLSTRING(Interaction_LoadoutSystem_Loadout_3), QPATHTOF(assets\ui\Crusader_Interaction_Rearm.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                [_caller,(profileNamespace getVariable QGVAR(loadout_3))] call CBA_fnc_setLoadout;
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 4
+            private _cls_load_4 = [LLSTRING(Interaction_LoadoutSystem_Loadout_4),LLSTRING(Interaction_LoadoutSystem_Loadout_4), QPATHTOF(assets\ui\Crusader_Interaction_Rearm.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                [_caller,(profileNamespace getVariable QGVAR(loadout_4))] call CBA_fnc_setLoadout;
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 5
+            private _cls_load_5 = [LLSTRING(Interaction_LoadoutSystem_Loadout_5),LLSTRING(Interaction_LoadoutSystem_Loadout_5), QPATHTOF(assets\ui\Crusader_Interaction_Rearm.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                [_caller,(profileNamespace getVariable QGVAR(loadout_5))] call CBA_fnc_setLoadout;
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+            // 6
+            private _cls_load_6 = [LLSTRING(Interaction_LoadoutSystem_Loadout_6),LLSTRING(Interaction_LoadoutSystem_Loadout_6), QPATHTOF(assets\ui\Crusader_Interaction_Rearm.paa), 
+            { 
+                params ["_target", "_caller", "_arguments"]; 
+
+                [_caller,(profileNamespace getVariable QGVAR(loadout_6))] call CBA_fnc_setLoadout;
+            }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+
+            private _actions = [];
+            _actions pushBack [_cls_load_1, [], _target];
+            _actions pushBack [_cls_load_2, [], _target];
+            _actions pushBack [_cls_load_3, [], _target];
+            _actions pushBack [_cls_load_4, [], _target];
+            _actions pushBack [_cls_load_5, [], _target];
+            _actions pushBack [_cls_load_6, [], _target];
+            _actions 
+
+        }, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
+        private _actions = [];
+        _actions pushBack [_cls_save, [], _target];
+        _actions pushBack [_cls_load, [], _target];
+        _actions 
+
+    }, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
 
     _actions pushBack [_alpha, [], _target];
     _actions pushBack [_bravo, [], _target]; 
     _actions pushBack [_charlie, [], _target]; 
     _actions pushBack [_delta, [], _target]; 
     _actions pushBack [_echo, [], _target]; 
-    _actions pushBack [_toc, [], _target]; 
+    _actions pushBack [_toc, [], _target];
+    _actions pushBack [_cls, [], _target]; 
  
     _actions 
 }, [], _position, _range] call ace_interact_menu_fnc_createAction; 

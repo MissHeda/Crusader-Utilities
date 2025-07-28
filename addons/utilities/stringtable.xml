@@ -37,6 +37,14 @@
             <English>Enables the whole loadout system.</English>
             <German>Aktiviert das gesamten Loadout System.</German>
         </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystem_Enable_LoadoutCommand">
+            <English>Enable Loadout System (Loadout Command)</English>
+            <German>Aktiviere Loadout System (Loadout Command)</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_LoadoutSystem_Enable_LoadoutCommand_DESC">
+            <English>Enables the loadout system for the crusader loadout command.</English>
+            <German>Aktiviert das Loadout System für den Crusader Loadout Command.</German>
+        </Key>
         <Key ID="STR_crusader_utilities_SETTING_LoadoutSystemInteractions_Enable">
             <English>Allowed Self Interactions</English>
             <German>Erlaubte Selbst Interaktionen</German>

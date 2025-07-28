@@ -25,7 +25,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ZeusSystem_List),LLSTRING(SETTING_ZeusSystem_List_DESC)],
     [CBA_SETTINGS_UTILITIES, LSTRING(SETTING_SubCategory_ZeusSystem)],
-    "76561197977381857, 76561198258492468, 76561198368670332, 76561197988889438, 76561198832508184,  76561198116122830, 76561198015895969", // Dan, Mia, Pulle, Pole, Paul, Anthony, Brain
+    "76561197977381857, 76561198258492468, 76561198368670332, 76561198832508184,  76561198116122830, 76561198015895969", // Dan, Mia, Pulle, Paul, Anthony, Brain
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(zeusIDs), []];
@@ -36,11 +36,21 @@ PREP_RECOMPILE_END;
     }
 ] call CBA_Settings_fnc_init;
 
-// Enable Loadout Interactions
+// Enable Loadout Self Interactions
 [
     QGVAR(loadoutSystemEnable),
     "CHECKBOX",
     [LLSTRING(SETTING_LoadoutSystem_Enable),LLSTRING(SETTING_LoadoutSystem_Enable_DESC)],
+    [CBA_SETTINGS_UTILITIES, LSTRING(SETTING_SubCategory_LoadoutSystem)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
+// Enable Loadout Command Interactions
+[
+    QGVAR(loadoutSystemEnableLoadoutCommand),
+    "CHECKBOX",
+    [LLSTRING(SETTING_LoadoutSystem_Enable_LoadoutCommand),LLSTRING(SETTING_LoadoutSystem_Enable_LoadoutCommand_DESC)],
     [CBA_SETTINGS_UTILITIES, LSTRING(SETTING_SubCategory_LoadoutSystem)],
     [true],
     true

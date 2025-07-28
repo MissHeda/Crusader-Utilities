@@ -10,7 +10,8 @@
 class BettIR_Config {
     class CompatibleAttachments {
 
-        // BW Mod
+        // ---- BW Mod----
+        
         class bwa3_acc_varioray_irlaser {
             offset[] = {0.050000001,0.28,0.059999999};
         };

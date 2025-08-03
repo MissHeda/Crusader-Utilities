@@ -50,12 +50,11 @@ workshop = [
     "463939057", # ACE3's Workshop ID
     "1779063631", # Zeus Enhanced
     "2369477168", # Advanced Dev Tools
-    "3190098290", # rank mod (TEMP)
     "1200127537", # BW Mod (TEMP)
     "2260572637", # BettIR (TEMP)
     "1795825073", # USP (TEMP)
-    "1412917989",
-    "3239124130" # Simunation pack
+    "1412917989", # hebontes
+    "3092130870" #  true viking
 ]
 parameters = [
     '"-profiles=C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia"'

@@ -1,7 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //	                                                            PLEASE NOTE
 // This addon contains content derived from:
-// - BettIR BW Compat                       | by seven10                | https://steamcommunity.com/sharedfiles/filedetails/?id=2419798213
 // - USP Gear Fix                           | by combatant              | https://steamcommunity.com/sharedfiles/filedetails/?id=2026102601
 // - BettIR USP Compatibility Ruby          | by t3quila                | https://steamcommunity.com/sharedfiles/filedetails/?id=3479359499
 //
@@ -10,16 +9,26 @@
 class BettIR_Config {
     class CompatibleAttachments {
 
-        // ---- BW Mod----
+        // ---- BW Mod ----
         
         class bwa3_acc_varioray_irlaser {
-            offset[] = {0.050000001,0.28,0.059999999};
+            offset[] = {0.035,0.25,0.047};
         };
         class bwa3_acc_varioray_irlaser_black: bwa3_acc_varioray_irlaser {};
         class bwa3_acc_llm01_irlaser: bwa3_acc_varioray_irlaser {};
         class bwa3_acc_llm01_irlaser_green: bwa3_acc_varioray_irlaser {};
         class bwa3_acc_llm01_irlaser_tan: bwa3_acc_varioray_irlaser {};
         class bwa3_acc_llm01_irlaser_underbarrel: bwa3_acc_varioray_irlaser {};
+
+
+        // ---- PTV Mod ----
+
+        class ptv_LLM {
+            offset[] = {0.05,0.3,0.074};
+        };
+        class ptv_LLM01: ptv_LLM {};
+        class ptv_LLM_des: ptv_LLM {};
+
     };
     class CompatibleNightvisionGoggles {
 

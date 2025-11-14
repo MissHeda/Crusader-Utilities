@@ -249,6 +249,10 @@
             <English>Medical Officer - Doctor</English>
             <German>Sanitätsoffizier - Arzt</German>
         </Key>
+        <Key ID="STR_crusader_utilities_LoadoutCommand_Delta_Truppfuehrer">
+            <English>Squad Leader</English>
+            <German>Truppführer</German>
+        </Key>
         <Key ID="STR_crusader_utilities_LoadoutCommand_Delta_Spotter">
             <English>Spotter</English>
             <German>Beobachter</German>

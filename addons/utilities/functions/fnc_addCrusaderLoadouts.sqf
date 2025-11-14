@@ -244,6 +244,14 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
     private _delta = [QGVAR(Loadouts_Delta),LLSTRING(Interaction_LoadoutCommand_Delta), QPATHTOF(assets\ui\Element_Delta.paa), 
     { }, { true }, {
 
+        // Truppführer
+        private _truppfuehrer = [QGVAR(LoadoutCommand_Delta_Truppfuehrer),LLSTRING(LoadoutCommand_Delta_Truppfuehrer), QPATHTOF(assets\ui\Element_Delta.paa), 
+        { 
+            params ["_target", "_caller", "_arguments"]; 
+
+            [_caller, GETMVAR(GVAR(LoadoutCommand_Delta_Truppfuehrer),[])] call CBA_fnc_setLoadout;
+        }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
+
 
         // Beobachter
         private _beobachter = [QGVAR(LoadoutCommand_Delta_Spotter),LLSTRING(LoadoutCommand_Delta_Spotter), QPATHTOF(assets\ui\Element_Delta.paa), 
@@ -263,7 +271,8 @@ private _mainInteraction = [QGVAR(Loadouts),LLSTRING(Interaction_LoadoutCommand_
         }, { true }, {}, [], [0,0,0], 1] call ace_interact_menu_fnc_createAction;
 
 
-        private _actions = [];
+        private _actions = []; 
+        _actions pushBack [_truppfuehrer, [], _target];
         _actions pushBack [_beobachter, [], _target];
         _actions pushBack [_sniper, [], _target];
         _actions 

@@ -25,7 +25,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     [LLSTRING(SETTING_ZeusSystem_List),LLSTRING(SETTING_ZeusSystem_List_DESC)],
     [CBA_SETTINGS_UTILITIES, LSTRING(SETTING_SubCategory_ZeusSystem)],
-    "76561197977381857, 76561198258492468, 76561198368670332, 76561198832508184,  76561198116122830, 76561198015895969", // Dan, Mia, Pulle, Paul, Anthony, Brain
+    "76561197977381857, 76561198258492468, 76561198368670332, 76561198116122830, 76561198015895969", // Dan, Mia, Pulle, Anthony, Brain
     1,
     {
         private _string = missionNamespace getVariable [QGVAR(zeusIDs), []];
@@ -392,13 +392,31 @@ PREP_RECOMPILE_END;
 
 // ------------- Delta -------------
 
+// Loadout command Delta Truppführer
+[
+    QGVAR(LoadoutCommand_Delta_Truppfuehrer),
+    "EDITBOX",
+    LLSTRING(LoadoutCommand_Delta_Truppfuehrer),
+    [CBA_SETTINGS_LOADOUTS, LSTRING(Interaction_LoadoutCommand_Delta)],
+    "",
+    1,
+    {
+        if (GETMVAR(GVAR(LoadoutCommand_Delta_Truppfuehrer),[]) == "") exitWith {
+            SETMVAR(GVAR(LoadoutCommand_Delta_Truppfuehrer),[]);
+        };
+        private _string = GETMVAR(GVAR(LoadoutCommand_Delta_Truppfuehrer),[]);
+        private _array = parseSimpleArray _string; 
+        SETMVAR(GVAR(LoadoutCommand_Delta_Truppfuehrer),_array);
+    }
+] call CBA_Settings_fnc_init;
+
 // Loadout command Delta Spotter
 [
     QGVAR(LoadoutCommand_Delta_Spotter),
     "EDITBOX",
     LLSTRING(LoadoutCommand_Delta_Spotter),
     [CBA_SETTINGS_LOADOUTS, LSTRING(Interaction_LoadoutCommand_Delta)],
-    '[[["ptv_hk433s_b","BWA3_muzzle_snds_QDSS","rhsusf_acc_anpeq15_bk","ptv_xps3xmag",["rhs_mag_30Rnd_556x45_M855_PMAG",30],[],"ptv_acc_grip4"],[],["MPP_PDP_BLK_9","ptv_trant9","ptv_dbalpl","optic_MRD_black",["MPP_23rnd_9MM_147FMJ_PDP",23],[],""],["GHOST_U_CRYE_G3_GHILLIE_MULTI",[["ACE_tourniquet",4],["ACE_IR_Strobe_Item",1],["ACE_CableTie",4],["ACE_EarPlugs",1],["ACE_splint",2],["ACE_elasticBandage",4],["ACE_packingBandage",8],["ACE_quikclot",4],["ACE_epinephrine",2],["ACE_morphine",2],["kat_guedel",1],["kat_chestSeal",2],["WBK_HeadLampItem",1],["ItemcTabHCam",1],["ACE_Flashlight_KSF1",1],["KNB_Notebook",1],["MRH_BluForTransponder",1],["kat_gasmaskFilter",1],["USP_M50_FC2_BLK2",1],["kat_Painkiller",1,10],["rhs_mag_30Rnd_556x45_M855_Stanag",2,30],["rhs_mag_30Rnd_556x45_M855_PMAG",1,30],[["UNSC_Knife","","","",[],[],""],1]]],["GHOST_V_TSF_3_2_MULTI_FLAG",[["ACE_Fortify",1],["ACE_EntrenchingTool",1],["ACE_fieldDressing",2],["ACE_packingBandage",2],["ACE_morphine",2],["ACE_tourniquet",2],["ACE_CableTie",5],["ACE_IR_Strobe_Item",1],["ACE_wirecutter",1],["ACE_ATragMX",1],["ACE_Kestrel4500",1],["BWA3_DM51A1",3,1],["BWA3_DM25",3,1],["ACE_Chemlight_IR",3,1],["ACE_Chemlight_HiGreen",1,1],["BWA3_DM32_Orange",2,1],["BWA3_DM32_Green",2,1],["BWA3_DM32_Purple",1,1],["rhs_mag_30Rnd_556x45_M855_PMAG",6,30],["MPP_23rnd_9MM_147JHP_PDP",2,23]]],["BWA3_Kitbag_Multi",[["ACE_salineIV_500",1],["ACE_salineIV_250",1],["AMP_Door_Wedge",2],["dzn_tripod_rifle",1],["STY_Item_CamoNet_BLUFOR",1],["ACE_Tripod",1],["ACE_MapTools",1],["rhs_mag_an_m14_th3",1,1],["rhs_mag_mk84",3,1]]],"USP_OPSCORE_FASTMT_FCV_OD_CTW","Balaclava_Crocodile_Gsg9_GreyG",["ACE_Vector","","","",[],[],""],["ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ChemicalDetector_01_watch_F",""]],[["KJW_TwoPrimaryWeapons_secondPrimaryEquipped",false],["KJW_TwoSecondaryWeapons_secondSecondaryInfo",["MPP_PDP_BLK_9","ptv_trant9","ptv_dbalpl","optic_MRD_black",["MPP_23rnd_9MM_147FMJ_PDP",23],[],""]],["KJW_TwoPrimaryWeapons_secondPrimaryInfo",[]],["KJW_TwoPrimaryWeapons_primaryPrimaryInfo",["ptv_hk433s_b","BWA3_muzzle_snds_QDSS","rhsusf_acc_anpeq15_bk","ptv_xps3xmag",["rhs_mag_30Rnd_556x45_M855_PMAG",30],[],"ptv_acc_grip4"]],["aceax_textureOptions",[]],["KJW_TwoSecondaryWeapons_secondSecondaryEquipped",true],["ace_earplugs",true],["KJW_TwoSecondaryWeapons_primarySecondaryInfo",["rhs_weap_tr8","","","",[],[],""]]]]',
+    "",
     1,
     {
         if (GETMVAR(GVAR(LoadoutCommand_Delta_Spotter),[]) == "") exitWith {
@@ -416,7 +434,7 @@ PREP_RECOMPILE_END;
     "EDITBOX",
     LLSTRING(LoadoutCommand_Delta_Sniper),
     [CBA_SETTINGS_LOADOUTS, LSTRING(Interaction_LoadoutCommand_Delta)],
-    '[[["BWA3_MP7","BWA3_muzzle_snds_Rotex_II","rhsusf_acc_anpeq15side_bk","BWA3_optic_EOTech",["BWA3_40Rnd_46x30_MP7",40],[],""],[],[],["GHOST_U_CRYE_G3_GHILLIE_MULTI",[["ACE_tourniquet",4],["ACE_IR_Strobe_Item",1],["ACE_CableTie",4],["ACE_MapTools",1],["ACE_EarPlugs",1],["ACE_splint",2],["ACE_elasticBandage",4],["ACE_packingBandage",8],["ACE_quikclot",4],["ACE_epinephrine",2],["ACE_morphine",2],["kat_guedel",1],["kat_chestSeal",2],["WBK_HeadLampItem",1],["ItemcTabHCam",1],["ACE_Flashlight_KSF1",1],["KNB_Notebook",1],["MRH_BluForTransponder",1],["kat_gasmaskFilter",1],["USP_M50_FC2_BLK2",1],["kat_Painkiller",1,10],[["UNSC_Knife","","","",[],[],""],1]]],["GHOST_V_TSF_3_2_MULTI_FLAG",[["ACE_MapTools",1],["ACE_RangeCard",1],["ACE_Fortify",1],["ACE_EntrenchingTool",1],["ACE_fieldDressing",1],["ACE_packingBandage",1],["ACE_morphine",1],["ACE_tourniquet",1],["BWA3_optic_NSV80",1],["ACE_CableTie",5],["ACE_IR_Strobe_Item",1],["BWA3_DM51A1",3,1],["BWA3_DM25",3,1],["ACE_Chemlight_IR",3,1],["ACE_Chemlight_HiGreen",1,1],["BWA3_DM32_Orange",2,1],["BWA3_DM32_Green",2,1],["BWA3_DM32_Purple",1,1],["BWA3_10Rnd_86x70_G29",5,10],["BWA3_40Rnd_46x30_MP7",2,40],["MPP_23rnd_9MM_147JHP_PDP",2,23]]],["BWA3_AssaultPack_Multi",[["ACE_salineIV_500",1],["ACE_salineIV_250",1],["AMP_Door_Wedge",2],["dzn_tripod_rifle",1],["rhs_mag_an_m14_th3",1,1],["rhs_mag_mk84",3,1]]],"USP_OPSCORE_FASTMT_FCV_OD_CTW","Balaclava_Crocodile_Gsg9_GreyG",["Laserdesignator_02","","","",["Laserbatteries",1],[],""],["ItemMap","ItemGPS","TFAR_anprc152_21","ItemCompass","TFAR_microdagr",""]],[["KJW_TwoPrimaryWeapons_secondPrimaryEquipped",true],["KJW_TwoSecondaryWeapons_secondSecondaryInfo",["MPP_PDP_BLK_9","ptv_trant9","ptv_dbalpl","optic_MRD_black",["MPP_23rnd_9MM_147FMJ_PDP",23],[],""]],["KJW_TwoPrimaryWeapons_secondPrimaryInfo",["BWA3_MP7","BWA3_muzzle_snds_Rotex_II","rhsusf_acc_anpeq15side_bk","BWA3_optic_EOTech",["BWA3_40Rnd_46x30_MP7",40],[],""]],["KJW_TwoPrimaryWeapons_primaryPrimaryInfo",["BWA3_G29","BWA3_muzzle_snds_Rotex_Monoblock","","BWA3_optic_M5Xi_MSR_pip",["BWA3_10Rnd_86x70_G29",10],[],"BWA3_bipod_Harris_tan"]],["aceax_textureOptions",[]],["KJW_TwoSecondaryWeapons_secondSecondaryEquipped",false],["ace_earplugs",true],["KJW_TwoSecondaryWeapons_primarySecondaryInfo",[]]]]',
+    "",
     1,
     {
         if (GETMVAR(GVAR(LoadoutCommand_Delta_Sniper),[]) == "") exitWith {

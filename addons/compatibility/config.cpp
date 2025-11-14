@@ -11,6 +11,29 @@ class CfgPatches {
         };
         author = "Miss Heda";
         url = ECSTRING(main,URL);
+        magazines[] = {
+            // SPS-basierte Crusader-Mags
+            "Crusader_G29_86x70_Scenar_300_Mag",
+            "Crusader_G29_86x70_Scenar_300_Tracer_Mag",
+            "Crusader_G29_86x70_Scenar_300_IR_Mag",
+            "Crusader_G29_86x70_HPBT_300_Mag",
+            "Crusader_G29_86x70_API526_Mag",
+            "Crusader_G29_86x70_Naturalis_250_Mag",
+            "Crusader_G29_86x70_Naturalis_250_Tracer_Mag",
+            "Crusader_G29_86x70_Naturalis_250_IR_Mag",
+            "Crusader_G29_86x70_Berger_300_Mag",
+            "Crusader_G29_86x70_Berger_300_Tracer_Mag",
+            "Crusader_G29_86x70_Berger_300_IR_Mag",
+            // Custom (ohne Tracer/IR)
+            "Crusader_10Rnd_86x70_G29_Solid",
+            "Crusader_10Rnd_86x70_G29_Hybrid",
+            "Crusader_10Rnd_86x70_G29_APSolid"
+        };
+        ammo[] = {
+            "Crusader_B_86x70_Solid",
+            "Crusader_B_86x70_Hybrid",
+            "Crusader_B_86x70_AP_Solid"
+        };
         VERSION_CONFIG;
     };
 };
@@ -18,3 +41,4 @@ class CfgPatches {
 #include "CfgBettIR.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"

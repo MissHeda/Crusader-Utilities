@@ -21,7 +21,7 @@ class BettIR_Config {
         class bwa3_acc_llm01_irlaser_underbarrel: bwa3_acc_varioray_irlaser {};
 
 
-        // ---- PTV Mod ----
+        // ---- Project True Viking Mod ----
 
         class ptv_LLM {
             offset[] = {0.05,0.3,0.074};

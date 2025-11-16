@@ -8,12 +8,12 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "crusader_main",
-            "BettIR_Core",
-            "sps_ai_axmc",
-            "bwa3_g29",
-            "bwa3_weapons",
-            "USP_Gear_Core",
-            "tfar_core"
+            "BettIR_Core", // BettIR
+            "SPS_Weapons", //SPS Weapons V2
+            "bwa3_weapons", // BW Mod
+            "USP_Gear_Core", // USP
+            "ptv_weapons_cfg", // Project True Viking
+            "tfar_core" //TFAR
         };
         author = "Miss Heda";
         url = ECSTRING(main,URL);

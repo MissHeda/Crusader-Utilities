@@ -46,22 +46,17 @@ preset = "Hemtt"
 
 [hemtt.launch]
 workshop = [
-    "450814997", # CBA_A3's Workshop ID
-    "463939057", # ACE3's Workshop ID
+    "450814997", # CBA_A3
+    "463939057", # ACE3
     "1779063631", # Zeus Enhanced
     "2369477168", # Advanced Dev Tools
     "1200127537", # BW Mod
     "2260572637", # BettIR
-    "1795825073", # USP
-    "1412917989", # hebontes
+    "1795825073", # USP Gear & Uniforms AIO
     "3092130870", # true viking
     "2811886291" # SPS weapons
 ]
-parameters = [
-    '"-profiles=C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia"'
-
-    #   '"C:\Users\Heda\OneDrive\Documents\Arma 3 - Other Profiles\Mia\mpmissions\KAT%20-%20Advanced%20Medicical%20Training%20Mission.Stratis\mission.sqm"'
-]
+parameters = []
 dlc = [
     "Global Mobilization"
 ]

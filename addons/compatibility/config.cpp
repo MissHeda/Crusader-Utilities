@@ -7,12 +7,18 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "crusader_main"
+            "crusader_main",
+            "BettIR_Core",
+            "sps_ai_axmc",
+            "bwa3_g29",
+            "bwa3_weapons",
+            "USP_Gear_Core",
+            "tfar_core"
         };
         author = "Miss Heda";
         url = ECSTRING(main,URL);
         magazines[] = {
-            // SPS-basierte Crusader-Mags
+            // SPS-based Crusader-Mags
             "Crusader_G29_86x70_Scenar_300_Mag",
             "Crusader_G29_86x70_Scenar_300_Tracer_Mag",
             "Crusader_G29_86x70_Scenar_300_IR_Mag",
@@ -24,7 +30,7 @@ class CfgPatches {
             "Crusader_G29_86x70_Berger_300_Mag",
             "Crusader_G29_86x70_Berger_300_Tracer_Mag",
             "Crusader_G29_86x70_Berger_300_IR_Mag",
-            // Custom (ohne Tracer/IR)
+            // Custom (without Tracer/IR)
             "Crusader_10Rnd_86x70_G29_Solid",
             "Crusader_10Rnd_86x70_G29_Hybrid",
             "Crusader_10Rnd_86x70_G29_APSolid"

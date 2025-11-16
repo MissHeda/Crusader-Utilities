@@ -12,7 +12,7 @@ class CfgAmmo {
         deflecting    = 10;
     };
 
-    // 2) Hybrid (HPBT + Polymer Tip)
+    // 2) Hybrid
     class Crusader_B_86x70_Hybrid : BWA3_B_86x70_Ball {
         displayName      = "8,6x70mm Hybrid";
         descriptionShort = "";
@@ -23,7 +23,7 @@ class CfgAmmo {
         deflecting    = 13;
     };
 
-    // 3) AP Solid (Hartkern, ohne Brand/Tracer)
+    // 3) AP Solid
     class Crusader_B_86x70_AP_Solid : BWA3_B_86x70_Ball {
         displayName      = "8,6x70mm AP Solid";
         descriptionShort = "";

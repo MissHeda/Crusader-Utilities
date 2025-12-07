@@ -289,14 +289,6 @@ class RscDisplayMain: RscStandardDisplay
                     y = "(3 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
                     onbuttonclick = "connectToServer ['162.55.107.229', 2302, ''];";
                 };
-                class join_CrusaderTeamSpeak: join_CrusaderServer // Custom join button for teamspeak
-                {
-                    text = CSTRING(MAINMENU_TeamSpeak_Connect);
-                    tooltip = CSTRING(MAINMENU_TeamSpeak_Connect_DESC);
-                    url = "ts3server://162.55.107.229";
-                    y = "(4 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
-                    onbuttonclick = "";
-                };
             };
         };
     };

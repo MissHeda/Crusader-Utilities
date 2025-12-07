@@ -113,14 +113,6 @@
             <English>Connect to the Kommandokräfte Crusader Server</English>
             <German>Verbinde dich mit dem Kommandokräfte Crusader Server</German>
         </Key>
-        <Key ID="STR_crusader_utilities_MAINMENU_TeamSpeak_Connect">
-            <English>Crusader TeamSpeak</English>
-            <German>Crusader TeamSpeak</German>
-        </Key>
-        <Key ID="STR_crusader_utilities_MAINMENU_TeamSpeak_Connect_DESC">
-            <English>Connect to the Kommandokräfte Crusader TeamSpeak</English>
-            <German>Verbinde dich mit dem Kommandokräfte Crusader TeamSpeak</German>
-        </Key>
         <Key ID="STR_crusader_utilities_MAINMENU_ArmaLogo_ReplacementIcon_DESC">
             <English>Kommandokräfte Crusader Website</English>
             <German>Kommandokräfte Crusader Webseite</German>

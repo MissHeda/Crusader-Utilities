@@ -25,3 +25,14 @@ class CfgPatches {
 #include "CfgMainMenuGui.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+
+class CfgFunctions {
+    class cTab_crusader_override {
+        tag = "cTab";
+        class cTab {
+            class updateLists {
+                file = "\ctab_crusader\functions\fnc_updateLists.sqf";
+            };
+        };
+    };
+};

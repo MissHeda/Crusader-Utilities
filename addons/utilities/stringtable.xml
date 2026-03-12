@@ -101,6 +101,18 @@
             <English>Sets if the body from a player should be deleted when they respawn.</English>
             <German>Legt fest, ob die Leiche eines Spielers beim Respawn gelöscht werden soll.</German>
         </Key>
+        <Key ID="STR_crusader_utilities_SETTING_SubCategory_GroupSystem">
+            <English>Group System</English>
+            <German>Gruppen System</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_GroupSystem_Insignia_Enable">
+            <English>Auto-assign Unit Insignia</English>
+            <German>Automatische Einheits-Insignia-Zuweisung</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_GroupSystem_Insignia_Enable_DESC">
+            <English>If enabled, unit insignia will be automatically assigned when setting a group position.</English>
+            <German>Wenn aktiviert, wird die Einheits-Insignia automatisch zugewiesen, wenn eine Gruppenposition gesetzt wird.</German>
+        </Key>
         <Key ID="STR_crusader_utilities_KEYBINDS_BettIR_NVGFIX">
             <English>BettIR) Toggle Goggles Illuminator (Fix for BettIR)</English>
             <German>BettIR) Toggle Goggles Illuminator (Fix für BettIR)</German>

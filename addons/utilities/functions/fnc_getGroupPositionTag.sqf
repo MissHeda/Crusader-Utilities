@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "../script_component.hpp"
 
 /*
  * Author: Dennis | CHX31
@@ -27,7 +27,6 @@ if (_tag isEqualTo "") exitWith {
     private _rawParts = _name splitString " ";
     private _parts = [];
     private _inNickname = false;
-    private _quote = toString [34];
 
     // Ignore nickname segments in quotes, e.g. Fw. Paul "pulle" Richter -> ["Fw.", "Paul", "Richter"]
     {

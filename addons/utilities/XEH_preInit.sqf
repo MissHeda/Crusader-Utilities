@@ -96,6 +96,16 @@ PREP_RECOMPILE_END;
     true
 ] call CBA_Settings_fnc_init;
 
+// Enable Auto-assign Unit Insignia
+[
+    QGVAR(groupSystemInsigniaEnable),
+    "CHECKBOX",
+    [LLSTRING(SETTING_GroupSystem_Insignia_Enable),LLSTRING(SETTING_GroupSystem_Insignia_Enable_DESC)],
+    [CBA_SETTINGS_UTILITIES, LSTRING(SETTING_SubCategory_GroupSystem)],
+    [true],
+    true
+] call CBA_Settings_fnc_init;
+
 // ------------- Alpha -------------
 
 // Loadout command Alpha Truppführer

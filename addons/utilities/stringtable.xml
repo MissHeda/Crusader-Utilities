@@ -101,6 +101,18 @@
             <English>Sets if the body from a player should be deleted when they respawn.</English>
             <German>Legt fest, ob die Leiche eines Spielers beim Respawn gelöscht werden soll.</German>
         </Key>
+        <Key ID="STR_crusader_utilities_SETTING_SubCategory_GroupSystem">
+            <English>Group System</English>
+            <German>Gruppen System</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_GroupSystem_Insignia_Enable">
+            <English>Auto-assign Unit Insignia</English>
+            <German>Automatische Einheits-Insignia-Zuweisung</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_SETTING_GroupSystem_Insignia_Enable_DESC">
+            <English>If enabled, unit insignia will be automatically assigned when setting a group position.</English>
+            <German>Wenn aktiviert, wird die Einheits-Insignia automatisch zugewiesen, wenn eine Gruppenposition gesetzt wird.</German>
+        </Key>
         <Key ID="STR_crusader_utilities_KEYBINDS_BettIR_NVGFIX">
             <English>BettIR) Toggle Goggles Illuminator (Fix for BettIR)</English>
             <German>BettIR) Toggle Goggles Illuminator (Fix für BettIR)</German>
@@ -180,6 +192,166 @@
         <Key ID="STR_crusader_utilities_Interaction_LoadoutSystem_Loadout_6">
             <English>Loadout 6</English>
             <German>Loadout 6</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem">
+            <English>Element Assignment</English>
+            <German>Elementezuweisung</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Unassign">
+            <English>Remove Patches</English>
+            <German>Patches ablegen</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Alpha">
+            <English>Element Alpha</English>
+            <German>Element Alpha</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Alpha_1">
+            <English>Element Alpha 1</English>
+            <German>Element Alpha 1</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Alpha_2">
+            <English>Element Alpha 2</English>
+            <German>Element Alpha 2</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Alpha_3">
+            <English>Element Alpha 3</English>
+            <German>Element Alpha 3</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Alpha_4">
+            <English>Element Alpha 4</English>
+            <German>Element Alpha 4</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Alpha_5">
+            <English>Element Alpha 5</English>
+            <German>Element Alpha 5</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Alpha_6">
+            <English>Element Alpha 6</English>
+            <German>Element Alpha 6</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Bravo">
+            <English>Element Bravo</English>
+            <German>Element Bravo</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Bravo_1">
+            <English>Element Bravo 1</English>
+            <German>Element Bravo 1</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Bravo_2">
+            <English>Element Bravo 2</English>
+            <German>Element Bravo 2</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Bravo_3">
+            <English>Element Bravo 3</English>
+            <German>Element Bravo 3</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Bravo_4">
+            <English>Element Bravo 4</English>
+            <German>Element Bravo 4</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Bravo_5">
+            <English>Element Bravo 5</English>
+            <German>Element Bravo 5</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Bravo_6">
+            <English>Element Bravo 6</English>
+            <German>Element Bravo 6</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Charlie">
+            <English>Element Charlie</English>
+            <German>Element Charlie</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Charlie_1">
+            <English>Element Charlie 1</English>
+            <German>Element Charlie 1</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Charlie_2">
+            <English>Element Charlie 2</English>
+            <German>Element Charlie 2</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Charlie_3">
+            <English>Element Charlie 3</English>
+            <German>Element Charlie 3</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Charlie_4">
+            <English>Element Charlie 4</English>
+            <German>Element Charlie 4</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Delta">
+            <English>Element Delta</English>
+            <German>Element Delta</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Delta_1">
+            <English>Element Delta 1</English>
+            <German>Element Delta 1</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Delta_2">
+            <English>Element Delta 2</English>
+            <German>Element Delta 2</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Delta_3">
+            <English>Element Delta 3</English>
+            <German>Element Delta 3</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Delta_4">
+            <English>Element Delta 4</English>
+            <German>Element Delta 4</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Delta_5">
+            <English>Element Delta 5</English>
+            <German>Element Delta 5</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo">
+            <English>Element Echo</English>
+            <German>Element Echo</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_1">
+            <English>Element Echo 1</English>
+            <German>Element Echo 1</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_2">
+            <English>Element Echo 2</English>
+            <German>Element Echo 2</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_3">
+            <English>Element Echo 3</English>
+            <German>Element Echo 3</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_4">
+            <English>Element Echo 4</English>
+            <German>Element Echo 4</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_5">
+            <English>Element Echo 5</English>
+            <German>Element Echo 5</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_6">
+            <English>Element Echo 6</English>
+            <German>Element Echo 6</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_7">
+            <English>Element Echo 7</English>
+            <German>Element Echo 7</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_8">
+            <English>Element Echo 8</English>
+            <German>Element Echo 8</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_9">
+            <English>Element Echo 9</English>
+            <German>Element Echo 9</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_10">
+            <English>Element Echo 10</English>
+            <German>Element Echo 10</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_11">
+            <English>Element Echo 11</English>
+            <German>Element Echo 11</German>
+        </Key>
+        <Key ID="STR_crusader_utilities_Interaction_GroupSystem_Echo_12">
+            <English>Element Echo 12</English>
+            <German>Element Echo 12</German>
         </Key>
         <Key ID="STR_crusader_utilities_Interaction_LoadoutCommand_Loadouts">
             <English>Loadouts</English>

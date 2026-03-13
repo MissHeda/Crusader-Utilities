@@ -182,5 +182,179 @@ class CfgVehicles {
                 };
             };
         };
+
+        // Crusader Position Tag System
+        class Crusader_Group_System {
+            displayName = CSTRING(Interaction_GroupSystem);
+            icon = QPATHTOF(assets\ui\CrusaderLogo_64.paa);
+
+            class Crusader_Group_System_Unassign {
+                displayName = CSTRING(Interaction_GroupSystem_Unassign);
+                condition = QUOTE(alive _player && (GETPVAR(_player,crusader_utilities_callsign,"") != ""));
+                statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,""); if (GVAR(groupSystemInsigniaEnable)) then { [_player, ""] call BIS_fnc_setUnitInsignia; });
+            };
+
+            class Crusader_Group_System_Alpha {
+                displayName = CSTRING(Interaction_GroupSystem_Alpha);
+                condition = QUOTE(alive _player);
+
+                class Crusader_Group_System_Alpha_1 {
+                    displayName = CSTRING(Interaction_GroupSystem_Alpha_1);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"A-1"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "A1"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Alpha_2 {
+                    displayName = CSTRING(Interaction_GroupSystem_Alpha_2);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"A-2"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "A2"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Alpha_3 {
+                    displayName = CSTRING(Interaction_GroupSystem_Alpha_3);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"A-3"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "A3"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Alpha_4 {
+                    displayName = CSTRING(Interaction_GroupSystem_Alpha_4);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"A-4"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "A4"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Alpha_5 {
+                    displayName = CSTRING(Interaction_GroupSystem_Alpha_5);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"A-5"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "A5"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Alpha_6 {
+                    displayName = CSTRING(Interaction_GroupSystem_Alpha_6);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"A-6"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "A6"] call BIS_fnc_setUnitInsignia; });
+                };
+            };
+
+            class Crusader_Group_System_Bravo {
+                displayName = CSTRING(Interaction_GroupSystem_Bravo);
+                condition = QUOTE(alive _player);
+
+                class Crusader_Group_System_Bravo_1 {
+                    displayName = CSTRING(Interaction_GroupSystem_Bravo_1);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"B-1"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "B1"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Bravo_2 {
+                    displayName = CSTRING(Interaction_GroupSystem_Bravo_2);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"B-2"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "B2"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Bravo_3 {
+                    displayName = CSTRING(Interaction_GroupSystem_Bravo_3);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"B-3"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "B3"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Bravo_4 {
+                    displayName = CSTRING(Interaction_GroupSystem_Bravo_4);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"B-4"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "B4"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Bravo_5 {
+                    displayName = CSTRING(Interaction_GroupSystem_Bravo_5);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"B-5"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "B5"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Bravo_6 {
+                    displayName = CSTRING(Interaction_GroupSystem_Bravo_6);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"B-6"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "B6"] call BIS_fnc_setUnitInsignia; });
+                };
+            };
+
+            class Crusader_Group_System_Charlie {
+                displayName = CSTRING(Interaction_GroupSystem_Charlie);
+                condition = QUOTE(alive _player);
+
+                class Crusader_Group_System_Charlie_1 {
+                    displayName = CSTRING(Interaction_GroupSystem_Charlie_1);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"C-1"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "C1"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Charlie_2 {
+                    displayName = CSTRING(Interaction_GroupSystem_Charlie_2);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"C-2"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "C2"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Charlie_3 {
+                    displayName = CSTRING(Interaction_GroupSystem_Charlie_3);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"C-3"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "C3"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Charlie_4 {
+                    displayName = CSTRING(Interaction_GroupSystem_Charlie_4);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"C-4"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "C4"] call BIS_fnc_setUnitInsignia; });
+                };
+            };
+
+            class Crusader_Group_System_Delta {
+                displayName = CSTRING(Interaction_GroupSystem_Delta);
+                condition = QUOTE(alive _player);
+
+                class Crusader_Group_System_Delta_1 {
+                    displayName = CSTRING(Interaction_GroupSystem_Delta_1);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"D-1"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "D1"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Delta_2 {
+                    displayName = CSTRING(Interaction_GroupSystem_Delta_2);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"D-2"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "D2"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Delta_3 {
+                    displayName = CSTRING(Interaction_GroupSystem_Delta_3);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"D-3"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "D3"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Delta_4 {
+                    displayName = CSTRING(Interaction_GroupSystem_Delta_4);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"D-4"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "D4"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Delta_5 {
+                    displayName = CSTRING(Interaction_GroupSystem_Delta_5);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"D-5"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "D5"] call BIS_fnc_setUnitInsignia; });
+                };
+            };
+
+            class Crusader_Group_System_Echo {
+                displayName = CSTRING(Interaction_GroupSystem_Echo);
+                condition = QUOTE(alive _player);
+
+                class Crusader_Group_System_Echo_1 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_1);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-1"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E1"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_2 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_2);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-2"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E2"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_3 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_3);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-3"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E3"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_4 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_4);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-4"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E4"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_5 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_5);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-5"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E5"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_6 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_6);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-6"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E6"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_7 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_7);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-7"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E7"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_8 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_8);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-8"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E8"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_9 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_9);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-9"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E9"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_10 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_10);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-10"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E10"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_11 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_11);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-11"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E11"] call BIS_fnc_setUnitInsignia; });
+                };
+                class Crusader_Group_System_Echo_12 {
+                    displayName = CSTRING(Interaction_GroupSystem_Echo_12);
+                    statement = QUOTE(SETPVAR(_player,crusader_utilities_callsign,"E-12"); if (GVAR(groupSystemInsigniaEnable)) then { [_player, "E12"] call BIS_fnc_setUnitInsignia; });
+                };
+            };
+        };
     };
 };

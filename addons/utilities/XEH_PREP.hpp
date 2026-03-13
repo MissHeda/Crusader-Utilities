@@ -4,3 +4,4 @@ PREP(handleKilled);
 PREP(handleRespawn);
 PREP(handleSpawn);
 PREP(loadoutDisplayCondition);
+PREP(getGroupPositionTag);
